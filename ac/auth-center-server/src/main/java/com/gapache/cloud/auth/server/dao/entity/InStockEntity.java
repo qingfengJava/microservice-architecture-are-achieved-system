@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @version V1.0
  * @Title: InStockEntity
  * @Description: Company:成都平凡谷科技有限责任公司

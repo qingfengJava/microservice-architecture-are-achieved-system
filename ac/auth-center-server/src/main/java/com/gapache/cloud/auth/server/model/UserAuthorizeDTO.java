@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/4 10:21 上午
  */
 @Data

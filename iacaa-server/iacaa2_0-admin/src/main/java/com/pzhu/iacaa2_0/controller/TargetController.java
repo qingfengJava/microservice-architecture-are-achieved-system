@@ -11,7 +11,6 @@ import com.pzhu.iacaa2_0.entity.Target;
 import com.pzhu.iacaa2_0.entityVo.IdsVo;
 import com.pzhu.iacaa2_0.entityVo.TargetVo;
 import com.pzhu.iacaa2_0.service.ICourseTargetService;
-import com.pzhu.iacaa2_0.service.ICourseTaskService;
 import com.pzhu.iacaa2_0.service.ITargetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -28,7 +26,7 @@ import java.util.List;
  *  前端控制器
  * </p>
  *
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @since 2021-01-15
  */
 @RestController

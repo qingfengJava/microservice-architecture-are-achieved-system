@@ -6,7 +6,7 @@ import com.gapache.jpa.BaseJpaRepository;
 import java.util.List;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/26 9:49 上午
  */
 public interface RolePermissionRepository extends BaseJpaRepository<RolePermissionEntity, Long> {

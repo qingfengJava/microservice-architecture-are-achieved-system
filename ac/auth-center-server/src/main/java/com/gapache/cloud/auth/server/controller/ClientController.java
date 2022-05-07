@@ -12,7 +12,7 @@ import com.gapache.security.model.ClientDTO;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/3 11:34 上午
  */
 @RestController

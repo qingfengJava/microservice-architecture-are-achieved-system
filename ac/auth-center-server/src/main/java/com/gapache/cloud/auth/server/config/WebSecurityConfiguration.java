@@ -52,7 +52,7 @@ import java.util.stream.Collectors;
  * 加密由https来做（防止中间人攻击）
  * 由请求方生成公钥和私钥，请求方使用私钥进行签名，我们使用公钥进行验签
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/31 10:40 上午
  */
 @EnableWebSecurity

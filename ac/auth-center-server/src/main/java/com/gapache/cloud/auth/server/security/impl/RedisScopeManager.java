@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 import static com.gapache.cloud.auth.server.constant.RedisConstants.SCOPE_CACHE_PREFIX;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/6 11:48 上午
  */
 @Component

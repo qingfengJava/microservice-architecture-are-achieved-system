@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/31 1:33 下午
  */
 public class CustomerInfo extends HashMap<String, Object> {

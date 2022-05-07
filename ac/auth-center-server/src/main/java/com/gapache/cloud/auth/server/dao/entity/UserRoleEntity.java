@@ -7,7 +7,7 @@ import lombok.ToString;
 import javax.persistence.*;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/26 2:54 下午
  */
 @Setter

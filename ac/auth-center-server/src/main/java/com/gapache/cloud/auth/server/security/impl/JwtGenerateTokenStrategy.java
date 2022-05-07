@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * jwt token 生成策略
  *
- * @author HuSen
+ * @author 清风学Javan
  * @since 2020/8/4 6:01 下午
  */
 @Slf4j

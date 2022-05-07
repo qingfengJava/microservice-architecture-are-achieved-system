@@ -14,7 +14,7 @@ import java.io.Serializable;
  * 3.str = base64(bytes)
  * 4.str全转大写即为最终的签名
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/25 3:21 下午
  */
 @Getter

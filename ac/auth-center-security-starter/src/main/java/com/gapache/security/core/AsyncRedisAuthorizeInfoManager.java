@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/17 8:01 下午
  */
 public class AsyncRedisAuthorizeInfoManager implements AsyncAuthorizeInfoManager {

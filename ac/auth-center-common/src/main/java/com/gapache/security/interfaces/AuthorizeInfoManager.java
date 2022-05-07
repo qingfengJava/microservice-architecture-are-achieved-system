@@ -5,7 +5,7 @@ import com.gapache.security.model.CustomerInfo;
 import java.util.Collection;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/4 6:16 下午
  */
 public interface AuthorizeInfoManager {

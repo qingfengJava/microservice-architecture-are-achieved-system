@@ -24,7 +24,7 @@ import static com.gapache.cloud.auth.server.constant.RedisConstants.REFRESH_TOKE
 import static com.gapache.cloud.auth.server.constant.RedisConstants.SCOPE_CACHE_PREFIX;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/5 10:04 上午
  */
 public abstract class BaseGenerateTokenLogic {

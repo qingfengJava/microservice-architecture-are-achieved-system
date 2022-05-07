@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
  * TODO 画一个认证中心架构和流程图，判断设计是否合理
  * TODO 出一个认证中心的说明书
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/30 10:15 下午
  */
 @Slf4j

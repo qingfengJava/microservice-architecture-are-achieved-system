@@ -6,7 +6,7 @@ import com.gapache.commons.model.PageResult;
 import com.gapache.security.model.ClientDTO;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/31 5:24 下午
  */
 public interface ClientService {

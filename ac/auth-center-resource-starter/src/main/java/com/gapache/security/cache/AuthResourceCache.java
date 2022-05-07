@@ -5,7 +5,7 @@ import com.gapache.security.annotation.AuthResource;
 import java.util.*;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/6 4:51 下午
  */
 public class AuthResourceCache extends HashMap<String, List<AuthResource>> {

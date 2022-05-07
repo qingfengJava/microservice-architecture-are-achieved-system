@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/26 2:15 下午
  */
 @Data

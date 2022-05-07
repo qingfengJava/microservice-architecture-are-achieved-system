@@ -5,16 +5,14 @@ import com.alibaba.excel.enums.CellDataTypeEnum;
 import com.alibaba.excel.metadata.CellData;
 import com.alibaba.excel.metadata.GlobalConfiguration;
 import com.alibaba.excel.metadata.property.ExcelContentProperty;
-import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @author ZhaoZezhong
+ * @author 清风学Javag
  * @version V1.0
  * @Title: LocalDateTimeConverter
- * @Description: Company:成都平凡谷科技有限责任公司
  * @date 2021/5/1316:57
  */
 public class LocalDateTimeConverter implements Converter<LocalDateTime> {

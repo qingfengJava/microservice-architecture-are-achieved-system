@@ -6,7 +6,7 @@ import com.gapache.security.model.CustomerInfo;
 /**
  * 授权码的策略接口
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/6 10:51 上午
  */
 public interface CodeStrategy {

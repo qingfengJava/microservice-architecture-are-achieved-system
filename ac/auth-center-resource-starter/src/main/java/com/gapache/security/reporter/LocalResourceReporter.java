@@ -5,7 +5,7 @@ import com.gapache.security.interfaces.ResourceReceiver;
 import com.gapache.security.model.ResourceReportDTO;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/7 4:05 下午
  */
 public class LocalResourceReporter implements ResourceReporter {

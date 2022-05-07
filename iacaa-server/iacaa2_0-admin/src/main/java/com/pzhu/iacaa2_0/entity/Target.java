@@ -1,12 +1,8 @@
 package com.pzhu.iacaa2_0.entity;
 
-import com.pzhu.iacaa2_0.base.BaseEntity;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.pzhu.iacaa2_0.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,7 +11,7 @@ import lombok.EqualsAndHashCode;
  *
  * </p>
  *
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @since 2021-01-15
  */
 @Data

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/4 6:19 下午
  */
 @Slf4j

@@ -5,7 +5,7 @@ import com.gapache.cloud.auth.server.dao.entity.ResourceEntity;
 import java.util.List;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/26 4:55 下午
  */
 public interface ResourceDao {

@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 组织信息
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/26 1:25 下午
  */
 @Data

@@ -4,7 +4,7 @@ import com.gapache.security.interfaces.AccessCardHolderStrategy;
 import com.gapache.security.model.AccessCard;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/9 6:26 下午
  */
 public class AccessCardHolder {

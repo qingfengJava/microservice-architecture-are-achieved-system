@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @version V1.0
  * @Title: MenuController
- * @Description: Company:成都平凡谷科技有限责任公司
  * @date 2021/4/914:12
  */
 @RestController

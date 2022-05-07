@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/25 4:49 下午
  */
 public interface PositionRepository extends JpaRepository<PositionEntity, Long> {

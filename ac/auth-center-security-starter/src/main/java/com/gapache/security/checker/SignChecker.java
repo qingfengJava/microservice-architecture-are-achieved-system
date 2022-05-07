@@ -3,7 +3,7 @@ package com.gapache.security.checker;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/2/1 4:19 下午
  */
 public interface SignChecker {

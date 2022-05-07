@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/4 7:22 下午
  */
 public class UUIDGenerateRefreshTokenStrategy implements GenerateRefreshTokenStrategy {

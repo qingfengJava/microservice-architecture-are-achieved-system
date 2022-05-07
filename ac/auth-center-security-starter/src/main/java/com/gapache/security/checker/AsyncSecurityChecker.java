@@ -4,7 +4,7 @@ import com.gapache.security.model.AccessCard;
 import io.vertx.core.Future;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/31 12:39 下午
  */
 public interface AsyncSecurityChecker {

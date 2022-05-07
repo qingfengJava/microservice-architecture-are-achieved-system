@@ -6,7 +6,7 @@ import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/4 11:45 上午
  */
 public class SecurityContextHelper {

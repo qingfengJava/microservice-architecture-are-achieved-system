@@ -11,7 +11,6 @@ import com.gapache.security.annotation.NeedAuth;
 import com.pzhu.iacaa2_0.common.ActionResult;
 import com.pzhu.iacaa2_0.easyexcel.NoModelDataListener;
 import com.pzhu.iacaa2_0.entity.CheckLink;
-import com.pzhu.iacaa2_0.entity.Course;
 import com.pzhu.iacaa2_0.entity.StuScore;
 import com.pzhu.iacaa2_0.entityVo.CheckLinkVo;
 import com.pzhu.iacaa2_0.entityVo.FileUploadVo;
@@ -38,7 +37,7 @@ import java.util.Map;
  *  前端控制器
  * </p>
  *
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @since 2021-04-21
  */
 @RestController
@@ -150,7 +149,7 @@ public class StuScoreController {
         String suffixName = fileName.substring(fileName.lastIndexOf("."));
 
         // 4路径
-        String filePath = "C://" + fileName;
+        String filePath = "D://" + fileName;
         File dest = new File(filePath);
         // 5判断目录是否存在
         if (!dest.getParentFile().exists()) {

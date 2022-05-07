@@ -10,7 +10,7 @@ import java.util.Collection;
  * 异步的授权信息管理器
  * 使用Vertx.redis
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/17 7:57 下午
  */
 public interface AsyncAuthorizeInfoManager {

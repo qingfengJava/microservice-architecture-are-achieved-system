@@ -3,7 +3,7 @@ package com.gapache.security.interfaces;
 import com.gapache.security.model.ResourceReportDTO;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/6 5:11 下午
  */
 public interface ResourceReporter {

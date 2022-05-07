@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/5 10:42 上午
  */
 @Component("authorization_code")

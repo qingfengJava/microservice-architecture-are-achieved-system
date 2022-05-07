@@ -1,10 +1,9 @@
 package com.gapache.security.checker;
 
 import com.gapache.security.model.AccessCard;
-import com.gapache.security.model.Certification;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/7/31 12:39 下午
  */
 public interface SecurityChecker {

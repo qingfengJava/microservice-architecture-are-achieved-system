@@ -10,7 +10,7 @@ import javax.persistence.*;
  * 角色权限关系
  * 多对多
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/25 1:37 下午
  */
 @Setter

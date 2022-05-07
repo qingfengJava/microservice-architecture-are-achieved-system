@@ -9,7 +9,7 @@ import javax.persistence.*;
 /**
  * 角色
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/1/25 1:36 下午
  */
 @Setter

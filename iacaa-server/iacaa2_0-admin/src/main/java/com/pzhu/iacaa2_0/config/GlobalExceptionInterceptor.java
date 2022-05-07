@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
- * @author ZhaoZezhong
+ * @author 清风学Java
  * @version V1.0
  * @Title: GlobalExceptionInterceptor
- * @Description: Company:成都平凡谷科技有限责任公司
  * @date 2021/4/139:30
  */
 @RestControllerAdvice(annotations = RestController.class)

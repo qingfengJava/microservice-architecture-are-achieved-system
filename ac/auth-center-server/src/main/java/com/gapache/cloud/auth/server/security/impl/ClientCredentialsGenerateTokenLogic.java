@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/5 10:31 上午
  */
 @Component("client_credentials")

@@ -1,7 +1,7 @@
 package com.gapache.cloud.auth.server.constant;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/5 10:48 上午
  */
 public class RedisConstants {

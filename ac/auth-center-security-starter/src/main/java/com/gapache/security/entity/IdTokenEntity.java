@@ -5,7 +5,7 @@ import com.gapache.vertx.redis.annotation.RedisEntity;
 import lombok.Data;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2021/3/25 10:50 上午
  */
 @Data

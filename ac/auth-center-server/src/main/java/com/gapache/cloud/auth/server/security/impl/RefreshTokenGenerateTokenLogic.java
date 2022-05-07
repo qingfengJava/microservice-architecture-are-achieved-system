@@ -24,7 +24,7 @@ import java.util.Map;
 import static com.gapache.cloud.auth.server.constant.RedisConstants.REFRESH_TOKEN_PREFIX;
 
 /**
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/5 10:34 上午
  */
 @Component("refresh_token")

@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * 远程上报资源
  *
- * @author HuSen
+ * @author 清风学Java
  * @since 2020/8/6 5:46 下午
  */
 @Slf4j
