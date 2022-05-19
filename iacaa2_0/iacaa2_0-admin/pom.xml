@@ -41,6 +41,11 @@
             <artifactId>core</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>iacaa2_0-admin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
