@@ -15,11 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:12 下午
- */
-//@Validating
 @RestController
 @RequestMapping("/api/user")
 @NeedAuth("User")

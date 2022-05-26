@@ -5,10 +5,6 @@ import org.springframework.context.ApplicationContext;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2021/3/15 3:56 下午
- */
 public interface ProtectingCaller {
 
     /**

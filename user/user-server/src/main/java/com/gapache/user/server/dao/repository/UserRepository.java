@@ -9,10 +9,6 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/9/8 11:29 上午
- */
 public interface UserRepository extends BaseJpaRepository<UserEntity, Long>, JpaSpecificationExecutor<UserEntity> {
 
     boolean existsByUsername(String username);

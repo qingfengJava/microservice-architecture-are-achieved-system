@@ -7,10 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/3/25 4:49 下午
- */
 public interface PositionRepository extends JpaRepository<PositionEntity, Long> {
 
     boolean existsByName(String name);

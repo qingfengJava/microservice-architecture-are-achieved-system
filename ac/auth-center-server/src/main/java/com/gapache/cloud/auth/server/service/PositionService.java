@@ -5,10 +5,6 @@ import com.gapache.security.model.PositionDTO;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/3/25 5:02 下午
- */
 public interface PositionService {
 
     Long create(PositionDTO dto);

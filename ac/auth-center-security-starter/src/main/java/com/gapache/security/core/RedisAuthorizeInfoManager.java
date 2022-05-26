@@ -11,10 +11,7 @@ import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/**
- * @author 清风学Java
- * @since 2020/8/4 6:19 下午
- */
+
 @Slf4j
 public class RedisAuthorizeInfoManager implements AuthorizeInfoManager {
 

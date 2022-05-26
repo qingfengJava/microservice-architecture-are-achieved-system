@@ -14,10 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 import static com.gapache.cloud.auth.server.constant.RedisConstants.CODE_CACHE_PREFIX;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 10:55 上午
- */
 @Component
 public class UUIDCodeStrategy implements CodeStrategy {
 

@@ -43,18 +43,6 @@ import java.io.IOException;
 import java.security.PrivateKey;
 import java.util.stream.Collectors;
 
-/**
- * 前后端分离的情况下有的数据可以让别人看无需加密
- * 前端做的加密其实都是不安全的
- * 特殊业务用上特殊的进行特殊的验证来解决，如进行手机短信验证等
- * <p>
- * 开放的接口需要进行签名校验
- * 加密由https来做（防止中间人攻击）
- * 由请求方生成公钥和私钥，请求方使用私钥进行签名，我们使用公钥进行验签
- *
- * @author 清风学Java
- * @since 2020/7/31 10:40 上午
- */
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 

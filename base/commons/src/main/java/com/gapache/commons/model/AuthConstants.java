@@ -1,9 +1,5 @@
 package com.gapache.commons.model;
 
-/**
- * @author HuSen
- * @since 2020/8/10 10:29 上午
- */
 public class AuthConstants {
 
     public static final String VEA = "vea-admin";

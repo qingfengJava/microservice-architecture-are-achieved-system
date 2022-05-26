@@ -1,11 +1,5 @@
 package com.gapache.commons.transform;
 
-/**
- * 模型转换接口
- *
- * @author HuSen
- * @since 2021/1/15 11:49 上午
- */
 public interface Transform<T, R> {
 
     /**

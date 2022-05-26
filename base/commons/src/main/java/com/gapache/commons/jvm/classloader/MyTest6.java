@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/1/19 10:46
- */
 public class MyTest6 {
     public static void main(String[] args) {
         // 使用类的静态方法 表示对类的主动使用 会进行初始化

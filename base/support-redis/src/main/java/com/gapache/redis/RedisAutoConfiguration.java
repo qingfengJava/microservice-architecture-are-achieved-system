@@ -11,10 +11,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/1/15 11:51
- */
 @ConditionalOnBean(annotation = EnableRedis.class)
 public class RedisAutoConfiguration {
 

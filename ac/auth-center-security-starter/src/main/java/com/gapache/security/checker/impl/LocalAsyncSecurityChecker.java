@@ -18,10 +18,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 12:45 下午
- */
 @Slf4j
 public class LocalAsyncSecurityChecker implements AsyncSecurityChecker {
 

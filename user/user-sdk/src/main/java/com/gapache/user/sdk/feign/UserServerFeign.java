@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/8/26 9:33 上午
- */
 @FeignClient(value = "user-server", fallback = UserServerFeignFallback.class)
 public interface UserServerFeign {
 

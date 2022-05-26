@@ -5,12 +5,6 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 
-/**
- * NetUtils
- * 
- * @author HuSen
- * create on 2020/1/9 15:15
- */
 public abstract class NetUtils {
 
     /**

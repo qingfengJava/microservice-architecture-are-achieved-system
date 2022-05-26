@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/1/24 16:51
- */
 public class MyTest13 {
 
     public static void main(String[] args) {

@@ -19,21 +19,6 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
-
-/**
- * 商户入驻
- *
- * 签名/验签工具类，包含以下功能
- * <pre>
- * 1. 获取RSA的公钥
- * 2. 获取RSA的私钥
- * 3. 进行RSA签名
- * 4. 进行RS验签
- * </pre>
- *
- * @author husen
- * @date 下午8:41 2018/11/9
- */
 public final class SignatureUtils {
 
     static {

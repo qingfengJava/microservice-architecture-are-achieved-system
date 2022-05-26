@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 6:02 下午
- */
 @RestController
 @RequestMapping("/api/resource")
 public class ResourceController {

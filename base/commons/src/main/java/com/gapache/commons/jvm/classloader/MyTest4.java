@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/1/19
- */
 public class MyTest4 {
     public static void main(String[] args) {
         // 对于数组实例来说，其类型是由JVM在运行期动态生成的，表示为[Lcom.gapache.commons.jvm.classloader.MyParent4

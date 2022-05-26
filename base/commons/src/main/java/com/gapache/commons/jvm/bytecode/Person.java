@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.bytecode;
 
-/**
- * @author HuSen
- * create on 2020/3/20 2:25 下午
- */
 public class Person {
 
     private String name;

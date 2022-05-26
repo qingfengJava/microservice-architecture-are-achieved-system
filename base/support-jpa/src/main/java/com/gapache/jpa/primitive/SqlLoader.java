@@ -1,11 +1,5 @@
 package com.gapache.jpa.primitive;
 
-/**
- * sql加载接口，由子类实现
- *
- * @author HuSen
- * @since 2021/1/29 10:28 上午
- */
 public interface SqlLoader {
     
     /**

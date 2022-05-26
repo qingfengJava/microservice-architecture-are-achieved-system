@@ -1,19 +1,5 @@
 package com.gapache.commons.jvm.gc;
 
-/**
- * -verbose:gc
- * -Xms20M
- * -Xmx20M
- * -Xmn10M
- * -XX:+PrintGCDetails
- * -XX:SurvivorRatio=8
- * -XX:+UseConcMarkSweepGC
- *
- * https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
- *
- * @author HuSen
- * create on 2020/4/26 5:46 下午
- */
 public class MyTest5 {
 
     public static void main(String[] args) {

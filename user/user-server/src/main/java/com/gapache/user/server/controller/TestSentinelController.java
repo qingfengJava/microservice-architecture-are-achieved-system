@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author HuSen
- * @since 2021/3/11 10:25 上午
- */
 @RestController
 @RequestMapping("/test")
 public class TestSentinelController {

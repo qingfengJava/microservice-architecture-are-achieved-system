@@ -9,10 +9,6 @@ import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2021/1/18 10:13 上午
- */
 public final class SpecificationFactory {
 
     public static <T> Specification<T> produce(ThreeConsumer<List<Predicate>, Root<T>, CriteriaBuilder> consumer) {

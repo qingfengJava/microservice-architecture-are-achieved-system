@@ -7,10 +7,6 @@ import java.lang.reflect.WildcardType;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/9/27 4:29 下午
- */
 public class WildcardTypeTest {
 
     private List<String> a;

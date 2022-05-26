@@ -1,11 +1,5 @@
 package com.gapache.commons.jvm.memory;
 
-/**
- * 使用jvisualvm、jconsole分析死锁
- *
- * @author HuSen
- * create on 2020/4/20 2:17 下午
- */
 public class MyTest3 {
 
     public static void main(String[] args) {

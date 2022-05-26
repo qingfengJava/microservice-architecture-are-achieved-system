@@ -1,9 +1,5 @@
 package com.gapache.jpa;
 
-/**
- * @author HuSen
- * @since 2021/2/1 1:37 下午
- */
 public final class CurrentOpManHolder {
 
     private static final ThreadLocal<Long> CONTEXT_HOLDER = new InheritableThreadLocal<>();

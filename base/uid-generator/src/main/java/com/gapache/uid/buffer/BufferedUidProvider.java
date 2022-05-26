@@ -2,10 +2,6 @@ package com.gapache.uid.buffer;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/1/9 15:24
- */
 @FunctionalInterface
 public interface BufferedUidProvider {
 

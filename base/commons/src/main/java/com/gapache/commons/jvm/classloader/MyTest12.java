@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
 
-/**
- * @author HuSen
- * create on 2020/1/21 15:48
- */
 public class MyTest12 {
     public static void main(String[] args) throws IOException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();

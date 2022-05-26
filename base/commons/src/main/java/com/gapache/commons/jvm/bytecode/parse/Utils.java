@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.bytecode.parse;
 
 import java.util.function.Consumer;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:37
- */
 public class Utils {
 
     public static String formatIndex(int index) {

@@ -2,12 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import sun.misc.Launcher;
 
-/**
- * java -Djava.system.class.loader=com.gapache.commons.jvm.classloader.MyClassLoader com.gapache.commons.jvm.classloader.MyTest20
- *
- * @author HuSen
- * create on 2020/3/16 11:52 上午
- */
 public class MyTest20 {
 
     public static void main(String[] args) {

@@ -5,10 +5,6 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/3/24 5:55 下午
- */
 @Data
 public class ElmUiTreeNode implements Serializable {
     private static final long serialVersionUID = 8171502749722849123L;

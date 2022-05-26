@@ -3,12 +3,6 @@ package com.gapache.cloud.auth.server.security;
 import com.gapache.cloud.auth.server.model.CodeCacheInfoDTO;
 import com.gapache.security.model.CustomerInfo;
 
-/**
- * 授权码的策略接口
- *
- * @author 清风学Java
- * @since 2020/8/6 10:51 上午
- */
 public interface CodeStrategy {
 
     /**

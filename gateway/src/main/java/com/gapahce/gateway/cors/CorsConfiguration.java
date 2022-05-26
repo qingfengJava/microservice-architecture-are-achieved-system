@@ -5,12 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.reactive.CorsWebFilter;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
-/**
- * 解决跨域请求的问题
- *
- * @author 清风学Java
- * @since 2021/2/3 9:14 上午
- */
 @Configuration
 public class CorsConfiguration {
 

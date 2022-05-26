@@ -6,23 +6,6 @@ import org.springframework.util.Assert;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * Represents a ring buffer based on array.<br>
- * 表示基于数组的环形缓冲区
- * Using array could improve read element performance due to the CUP cache line.
- * 由于CUP缓存行，使用数组可以提高读取元素的性能
- * To prevent the side effect of False Sharing, {@link PaddedAtomicLong} is using on 'tail' and 'cursor'<p>
- * 为了阻止伪共享的的影响，tail和cursor使用了PaddedAtomicLong<p>
- * <p>
- * A ring buffer is consisted of:
- * <li><b>slots:</b> each element of the array is a slot, which is be set with a UID
- * <li><b>flags:</b> flag array corresponding the same index with the slots, indicates whether can take or put slot
- * <li><b>tail:</b> a sequence of the max slot position to produce
- * <li><b>cursor:</b> a sequence of the min slot position to consume
- *
- * @author HuSen
- * create on 2020/1/9 15:26
- */
 @Slf4j
 public class RingBuffer {
 

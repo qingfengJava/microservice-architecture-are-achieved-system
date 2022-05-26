@@ -13,10 +13,6 @@ import org.springframework.util.Base64Utils;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 
-/**
- * @author 清风学Java
- * @since 2021/3/24 3:12 下午
- */
 @Slf4j
 public class AccessCardUtils {
 

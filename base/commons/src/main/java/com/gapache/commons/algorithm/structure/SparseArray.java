@@ -2,12 +2,6 @@ package com.gapache.commons.algorithm.structure;
 
 import com.gapache.commons.algorithm.Utils;
 
-/**
- * 稀疏数组
- *
- * @author HuSen
- * @since 2020/5/27 5:12 下午
- */
 public class SparseArray {
     public static final String C = "s";
 

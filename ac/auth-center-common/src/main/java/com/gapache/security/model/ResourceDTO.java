@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author 清风学Java
- * @since 2021/3/30 11:48 上午
- */
 @Data
 public class ResourceDTO implements Serializable {
     private static final long serialVersionUID = 5716460972166154096L;

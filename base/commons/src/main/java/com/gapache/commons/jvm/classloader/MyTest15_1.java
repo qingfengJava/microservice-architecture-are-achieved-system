@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/3/14 5:52 下午
- */
 public class MyTest15_1 {
 
     public static void main(String[] args) throws Exception {

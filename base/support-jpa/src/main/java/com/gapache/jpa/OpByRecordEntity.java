@@ -11,10 +11,6 @@ import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
-/**
- * @author HuSen
- * create on 2020/4/29 3:33 下午
- */
 @Getter
 @Setter
 @MappedSuperclass

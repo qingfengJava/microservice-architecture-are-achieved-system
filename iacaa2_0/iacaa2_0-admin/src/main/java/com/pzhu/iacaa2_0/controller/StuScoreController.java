@@ -32,14 +32,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-04-21
- */
 @RestController
 @RequestMapping("/stuScore")
 @NeedAuth("StuScore")

@@ -6,12 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
-/**
- * 角色
- *
- * @author 清风学Java
- * @since 2021/1/25 1:36 下午
- */
+
 @Setter
 @Getter
 @ToString

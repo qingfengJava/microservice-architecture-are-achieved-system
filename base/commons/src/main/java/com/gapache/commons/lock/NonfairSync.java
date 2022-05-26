@@ -1,11 +1,5 @@
 package com.gapache.commons.lock;
 
-/**
- * 非公平锁
- *
- * @author HuSen
- * @since 2020/7/30 2:06 下午
- */
 public final class NonfairSync extends AbstractSync {
     private static final long serialVersionUID = 4140946380872770357L;
 

@@ -3,10 +3,6 @@ package com.gapache.user.common.model;
 import com.gapache.commons.model.Error;
 import lombok.Getter;
 
-/**
- * @author HuSen
- * @since 2021/1/26 3:14 下午
- */
 @Getter
 public enum UserError implements Error {
     //

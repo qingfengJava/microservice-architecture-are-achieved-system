@@ -7,10 +7,6 @@ import lombok.ToString;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:25 下午
- */
 @Getter
 @Setter
 @ToString

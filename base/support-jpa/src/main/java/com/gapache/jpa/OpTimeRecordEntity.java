@@ -9,10 +9,6 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
-/**
- * @author HuSen
- * create on 2020/4/29 3:29 下午
- */
 @Getter
 @Setter
 @MappedSuperclass

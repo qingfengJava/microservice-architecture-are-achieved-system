@@ -6,10 +6,6 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
-/**
- * @author HuSen
- * @since 2020/9/8 11:23 上午
- */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity

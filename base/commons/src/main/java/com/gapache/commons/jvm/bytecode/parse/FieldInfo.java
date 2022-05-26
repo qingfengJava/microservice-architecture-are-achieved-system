@@ -6,12 +6,6 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * 我的字节码解析工具
- *
- * @author HuSen
- * create on 2020/3/28 00:02
- */
 @Data
 public class FieldInfo {
     private List<AccessFlag> accessFlags;

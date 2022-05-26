@@ -9,14 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-04-21
- */
 @Service
 public class CourseTaskCheckLinkServiceImpl extends ServiceImpl<CourseTaskCheckLinkMapper, CourseTaskCheckLink> implements ICourseTaskCheckLinkService {
 

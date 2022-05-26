@@ -12,10 +12,6 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.*;
 
-/**
- * @author HuSen
- * @since 2020/7/16 1:52 下午
- */
 public class TransactionProducer {
 
     private static final ConcurrentHashMap<String, LocalTransactionState> TRANSACTION_STATES = new ConcurrentHashMap<>();

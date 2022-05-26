@@ -21,14 +21,6 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @RestController
 @RequestMapping("/courseTarget")
 @NeedAuth("CourseTarget")

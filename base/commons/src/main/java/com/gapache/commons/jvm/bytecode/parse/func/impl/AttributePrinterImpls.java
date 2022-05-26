@@ -11,10 +11,6 @@ import com.gapache.commons.jvm.bytecode.parse.func.AttributePrinter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/3/30 2:10 下午
- */
 public class AttributePrinterImpls {
 
     public static final AttributePrinter SOURCE_FILE_PRINTER =

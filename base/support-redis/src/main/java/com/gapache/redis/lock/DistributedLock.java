@@ -8,12 +8,6 @@ import org.springframework.lang.NonNull;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 
-/**
- * 分布式锁
- *
- * @author HuSen
- * @since 2021/1/28 2:49 下午
- */
 public class DistributedLock implements RLock {
 
     private final RLock proxy;

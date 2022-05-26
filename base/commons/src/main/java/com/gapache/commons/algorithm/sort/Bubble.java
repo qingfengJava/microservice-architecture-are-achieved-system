@@ -2,10 +2,6 @@ package com.gapache.commons.algorithm.sort;
 
 import java.util.Arrays;
 
-/**
- * @author HuSen
- * @since 2020/7/17 11:03 上午
- */
 public class Bubble {
 
     public static void sort(int[] arr) {

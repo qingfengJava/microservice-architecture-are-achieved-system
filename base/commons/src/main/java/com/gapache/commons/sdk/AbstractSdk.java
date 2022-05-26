@@ -5,10 +5,6 @@ import org.springframework.util.FileCopyUtils;
 
 import java.nio.charset.StandardCharsets;
 
-/**
- * @author HuSen
- * @since 2020/6/24 3:23 下午
- */
 public abstract class AbstractSdk implements Sdk {
 
     private final String paramPath;

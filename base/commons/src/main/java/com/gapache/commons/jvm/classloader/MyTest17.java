@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import java.lang.reflect.Method;
 
-/**
- * @author HuSen
- * create on 2020/3/14 6:11 下午
- */
 public class MyTest17 {
 
     public static void main(String[] args) throws Exception {

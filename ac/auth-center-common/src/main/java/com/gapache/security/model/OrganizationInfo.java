@@ -4,12 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * 组织信息
- *
- * @author 清风学Java
- * @since 2021/3/26 1:25 下午
- */
 @Data
 public class OrganizationInfo implements Serializable {
     private static final long serialVersionUID = 4924869526983564358L;

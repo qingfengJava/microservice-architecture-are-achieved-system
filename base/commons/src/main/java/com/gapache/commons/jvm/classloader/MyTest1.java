@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/1/18
- */
 public class MyTest1 {
     public static void main(String[] args) {
         // 对于静态字段来说，只有直接定义了该字段的类才会被初始化；

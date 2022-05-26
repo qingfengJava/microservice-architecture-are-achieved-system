@@ -12,13 +12,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/**
- * Represents an executor for padding {@link RingBuffer}<br>
- * There are two kinds of executors: one for scheduled padding, the other for padding immediately.
- *
- * @author HuSen
- * create on 2020/1/9 15:52
- */
 @Slf4j
 public class BufferPaddingExecutor {
 

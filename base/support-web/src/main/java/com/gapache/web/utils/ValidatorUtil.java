@@ -9,12 +9,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
-/**
- * 实体数据校验工具
- *
- * @author HuSen
- * @date 2019/01/29
- */
 public class ValidatorUtil {
 
     private static final Validator VALIDATOR = Validation.buildDefaultValidatorFactory().getValidator();

@@ -12,10 +12,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/3/3 9:17 上午
- */
 public class CacheableMethodRoutingResolver {
 
     private final Map<Method, String> methodPathMap;

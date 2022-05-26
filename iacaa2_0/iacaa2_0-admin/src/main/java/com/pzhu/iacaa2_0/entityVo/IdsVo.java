@@ -4,9 +4,6 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * @author MrZhao
- */
 @Data
 public class IdsVo {
     private List<Long> ids;

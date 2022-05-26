@@ -7,10 +7,6 @@ import org.springframework.util.FileCopyUtils;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * @author HuSen
- * @since 2021/1/29 10:45 上午
- */
 @Slf4j
 public abstract class AbstractPathSqlLoader implements SqlLoader {
 	

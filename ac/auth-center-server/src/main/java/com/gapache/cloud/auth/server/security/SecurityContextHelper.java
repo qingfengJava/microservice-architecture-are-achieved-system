@@ -5,10 +5,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-/**
- * @author 清风学Java
- * @since 2020/8/4 11:45 上午
- */
 public class SecurityContextHelper {
 
     public static UserDetailsImpl getUserDetails() {

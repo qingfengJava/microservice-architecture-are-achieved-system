@@ -2,10 +2,6 @@ package com.gapache.commons.model;
 
 import lombok.Data;
 
-/**
- * @author HuSen
- * @since 2021/1/18 10:40 上午
- */
 @Data
 public class RespInfo implements RespInfoHelper {
 

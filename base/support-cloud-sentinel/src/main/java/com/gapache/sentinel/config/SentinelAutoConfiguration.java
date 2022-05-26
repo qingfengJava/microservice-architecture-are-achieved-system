@@ -33,10 +33,6 @@ import java.lang.reflect.Method;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author HuSen
- * @since 2021/3/11 9:38 上午
- */
 @Slf4j
 @Configuration
 public class SentinelAutoConfiguration implements ApplicationListener<ApplicationStartedEvent> {

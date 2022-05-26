@@ -6,12 +6,6 @@ import com.gapache.security.model.ResourceReportDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * 远程上报资源
- *
- * @author 清风学Java
- * @since 2020/8/6 5:46 下午
- */
 @Slf4j
 public class RemoteResourceReporter implements ResourceReporter {
 

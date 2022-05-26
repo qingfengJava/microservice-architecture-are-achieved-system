@@ -6,10 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:22
- */
 @Getter
 public enum AccessFlag {
     //

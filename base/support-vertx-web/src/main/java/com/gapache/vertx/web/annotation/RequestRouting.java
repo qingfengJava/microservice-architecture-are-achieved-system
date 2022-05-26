@@ -4,10 +4,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.lang.annotation.*;
 
-/**
- * @author HuSen
- * @since 2021/3/1 3:46 下午
- */
 @Inherited
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

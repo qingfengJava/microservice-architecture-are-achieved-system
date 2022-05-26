@@ -27,7 +27,6 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.env.Environment;
-import org.springframework.core.env.StandardEnvironment;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.support.StandardServletEnvironment;
@@ -38,10 +37,6 @@ import java.util.Objects;
 
 import static com.gapache.vertx.core.PathHelper.correctPath;
 
-/**
- * @author HuSen
- * @since 2021/3/1 3:26 下午
- */
 @Slf4j
 @Configuration
 @ConditionalOnBean(annotation = EnableVertxWeb.class)

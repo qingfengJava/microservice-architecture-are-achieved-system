@@ -13,10 +13,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:09 下午
- */
 @Service
 public class UserCustomizeInfoServiceImpl implements UserCustomizeInfoService {
 

@@ -8,10 +8,6 @@ import com.gapache.commons.jvm.bytecode.parse.cp.MethodHandleConstantItem;
 import com.gapache.commons.jvm.bytecode.parse.cp.ValueConstantItem;
 import com.gapache.commons.jvm.bytecode.parse.func.ConstantInfoPrinter;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:42
- */
 public final class ConstantInfoPrinterImpls {
 
     public static final ConstantInfoPrinter INVOKE_DYNAMIC_CONSTANT_INFO_PRINTER =

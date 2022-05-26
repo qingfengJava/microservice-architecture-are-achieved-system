@@ -8,12 +8,6 @@ import lombok.Getter;
 import static com.gapache.commons.jvm.bytecode.parse.func.impl.ByteCodeCompositionParserImpls.*;
 import static com.gapache.commons.jvm.bytecode.parse.func.impl.ByteCodeCompositionPrinterImpls.*;
 
-/**
- * 字节码组成
- *
- * @author HuSen
- * create on 2020/3/28 00:16
- */
 @Getter
 public enum ByteCodeComposition {
     // 魔数

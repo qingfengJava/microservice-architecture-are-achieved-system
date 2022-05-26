@@ -17,10 +17,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author 清风学Java
- * @since 2021/1/26 4:55 下午
- */
 @Slf4j
 public class ResourceDaoImpl extends BaseJpaRepositoryBean<ResourceEntity, Long> implements ResourceDao {
 

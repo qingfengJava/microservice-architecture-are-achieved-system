@@ -26,10 +26,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 6:04 下午
- */
 @Slf4j
 @Service
 public class ResourceServiceImpl implements ResourceReceiver, ResourceService {

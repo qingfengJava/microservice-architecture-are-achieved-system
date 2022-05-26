@@ -36,10 +36,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author HuSen
- * @since 2021/3/2 1:22 下午
- */
 @Slf4j
 @Configuration
 @ConditionalOnBean(annotation = EnableZeusClients.class)

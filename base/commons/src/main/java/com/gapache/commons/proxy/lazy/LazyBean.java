@@ -4,10 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import net.sf.cglib.proxy.Enhancer;
 
-/**
- * @author HuSen
- * @since 2020/5/27 1:59 下午
- */
 @Setter
 @Getter
 public class LazyBean {

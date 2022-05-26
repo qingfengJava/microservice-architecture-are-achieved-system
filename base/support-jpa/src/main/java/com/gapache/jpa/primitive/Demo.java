@@ -4,10 +4,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/1/29 11:32 上午
- */
 public enum Demo implements IQuery{;
 	
 	private final Class<?> entityClass;

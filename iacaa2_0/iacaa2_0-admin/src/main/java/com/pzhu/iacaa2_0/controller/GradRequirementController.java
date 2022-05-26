@@ -35,14 +35,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-/**
- * <p>
- * 前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @RestController
 @RequestMapping("/gradRequirement")
 @NeedAuth("GradRequirement")

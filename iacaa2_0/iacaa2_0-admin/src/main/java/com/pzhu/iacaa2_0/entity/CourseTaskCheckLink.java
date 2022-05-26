@@ -8,14 +8,6 @@ import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 
-/**
- * <p>
- *
- * </p>
- *
- * @author 清风学Java
- * @since 2021-04-21
- */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_course_task_check_link")

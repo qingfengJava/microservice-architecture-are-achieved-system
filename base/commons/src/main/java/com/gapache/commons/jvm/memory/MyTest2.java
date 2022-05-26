@@ -1,12 +1,5 @@
 package com.gapache.commons.jvm.memory;
 
-/**
- * 虚拟机栈溢出
- * jconsole
- *
- * @author HuSen
- * create on 2020/4/20 11:44 上午
- */
 public class MyTest2 {
 
     private int length;

@@ -4,12 +4,6 @@ import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.*;
 
-/**
- * 为此接口生成一个动态代理的类
- *
- * @author HuSen
- * @since 2021/3/2 1:32 下午
- */
 @Inherited
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

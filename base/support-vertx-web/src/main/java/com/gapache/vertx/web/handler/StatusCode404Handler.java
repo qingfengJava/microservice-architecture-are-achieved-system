@@ -9,10 +9,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author HuSen
- * @since 2021/3/2 10:04 上午
- */
 @Slf4j
 public class StatusCode404Handler implements Handler<RoutingContext> {
 

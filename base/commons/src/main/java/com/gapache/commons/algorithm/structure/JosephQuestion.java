@@ -2,12 +2,6 @@ package com.gapache.commons.algorithm.structure;
 
 import lombok.Data;
 
-/**
- * 约瑟夫问题
- *
- * @author HuSen
- * @since 2020/7/18 8:32 下午
- */
 public class JosephQuestion {
     private People first;
     private People last;

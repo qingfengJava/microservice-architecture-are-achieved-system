@@ -17,10 +17,6 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2020/6/24 2:59 下午
- */
 public class HttpAsyncUtils {
 
     private static final CloseableHttpAsyncClient ASYNC_CLIENT;

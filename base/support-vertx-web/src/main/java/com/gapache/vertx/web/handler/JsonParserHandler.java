@@ -10,17 +10,10 @@ import org.aspectj.weaver.reflect.Java15AnnotationFinder;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-/**
- * 一些基本类型参数的解析
- *
- * @author HuSen
- * @since 2021/3/1 6:39 下午
- */
 @Slf4j
 public class JsonParserHandler implements Handler<RoutingContext> {
 

@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/3/29 21:22
- */
 public class ByteCodeCompositionParserImpls {
 
     public static final ByteCodeCompositionParser MAGIC_NUMBER_PARSER =

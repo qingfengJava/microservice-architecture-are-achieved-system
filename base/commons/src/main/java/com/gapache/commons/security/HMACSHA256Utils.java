@@ -4,13 +4,6 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 
-/**
- * HmacSHA256签名
- *
- * @author HuSen
- * @since 2021/1/25 3:29 下午
- */
-@SuppressWarnings("AlibabaClassNamingShouldBeCamel")
 public class HMACSHA256Utils {
 
     public static String sign(String data, String key) {

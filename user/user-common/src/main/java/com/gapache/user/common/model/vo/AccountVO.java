@@ -6,10 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author HuSen
- * create on 2020/3/31 10:31 上午
- */
+
 @Data
 public class AccountVO implements Serializable {
     private static final long serialVersionUID = 5224557662102429053L;

@@ -3,10 +3,6 @@ package com.gapache.cloud.auth.server.security;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 11:46 上午
- */
 public interface ScopeManager {
 
     /**

@@ -24,10 +24,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.spec.InvalidKeySpecException;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 1:14 下午
- */
 @Slf4j
 @Configuration
 @EnableConfigurationProperties(SecurityProperties.class)

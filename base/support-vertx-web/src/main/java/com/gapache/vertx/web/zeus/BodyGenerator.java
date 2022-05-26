@@ -6,10 +6,6 @@ import com.gapache.vertx.web.utils.ObjectUtils;
 
 import java.lang.reflect.Method;
 
-/**
- * @author HuSen
- * @since 2021/3/3 9:26 上午
- */
 public class BodyGenerator {
 
     public String generating(Method method, Object[] args) {

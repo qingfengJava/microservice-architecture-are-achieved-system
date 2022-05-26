@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/9/17 1:43 下午
- */
 @Data
 public class UserInfo {
     private String name;

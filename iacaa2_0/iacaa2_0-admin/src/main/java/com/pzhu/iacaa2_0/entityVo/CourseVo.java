@@ -6,9 +6,6 @@ import com.pzhu.iacaa2_0.entity.CourseTask;
 import lombok.Data;
 import java.util.List;
 
-/**
- * @author MrZhao
- */
 @Data
 public class CourseVo extends Course {
     private String word;

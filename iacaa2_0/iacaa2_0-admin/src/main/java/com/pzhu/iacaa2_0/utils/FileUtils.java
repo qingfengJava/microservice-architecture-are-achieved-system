@@ -5,13 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
 
-/**
- * @author ZhaoZezhong
- * @version V1.0
- * @Title: FileUtils
- * @Description: Company:成都平凡谷科技有限责任公司
- * @date 2021/4/2610:28
- */
+
 public class FileUtils {
 
     public static void download(String path, String fileName, HttpServletResponse response) throws IOException {

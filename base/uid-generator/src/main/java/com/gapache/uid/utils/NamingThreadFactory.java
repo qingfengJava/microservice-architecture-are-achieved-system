@@ -10,13 +10,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * Named thread in ThreadFactory.If there is no specified name for thread, it
- * will auto detect using the invoker classname instead.
- *
- * @author HuSen
- * create on 2020/1/9 15:40
- */
 @Getter
 @Setter
 @Slf4j

@@ -7,10 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author HuSen
- * @since 2020/9/27 3:17 下午
- */
 public class ParameterizedTypeTest<T> {
     private static final String LINE = "----------" + System.lineSeparator();
     private List<T> list;

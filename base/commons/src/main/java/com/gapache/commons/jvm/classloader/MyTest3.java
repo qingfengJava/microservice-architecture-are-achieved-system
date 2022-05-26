@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import java.util.UUID;
 
-/**
- * @author HuSen
- * create on 2020/1/19
- */
 public class MyTest3 {
 
     public static void main(String[] args) {

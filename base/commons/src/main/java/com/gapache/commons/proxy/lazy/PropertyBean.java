@@ -3,10 +3,6 @@ package com.gapache.commons.proxy.lazy;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * @author HuSen
- * @since 2020/5/27 1:57 下午
- */
 @Getter
 @Setter
 public class PropertyBean {

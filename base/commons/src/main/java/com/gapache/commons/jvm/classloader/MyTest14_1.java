@@ -1,11 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * 分别删除MySample和MyCat会有不同的效果
- *
- * @author HuSen
- * create on 2020/3/14 4:59 下午
- */
 public class MyTest14_1 {
     public static void main(String[] args) throws Exception {
         MyClassLoader loader1 = new MyClassLoader("/Users/macos/Desktop/", "loader1");

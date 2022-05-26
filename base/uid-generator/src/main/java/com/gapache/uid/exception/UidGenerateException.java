@@ -1,11 +1,5 @@
 package com.gapache.uid.exception;
 
-/**
- * UidGenerateException
- *
- * @author HuSen
- * create on 2020/1/9 16:38
- */
 public class UidGenerateException extends RuntimeException {
     private static final long serialVersionUID = 7450085737650622981L;
 

@@ -2,12 +2,6 @@ package com.gapache.uid.utils;
 
 import org.springframework.util.Assert;
 
-/**
- * EnumUtils provides the operations for {@link ValuedEnum} such as Parse, value of...
- *
- * @author HuSen
- * create on 2020/1/9 15:15
- */
 public abstract class EnumUtils {
 
     /**

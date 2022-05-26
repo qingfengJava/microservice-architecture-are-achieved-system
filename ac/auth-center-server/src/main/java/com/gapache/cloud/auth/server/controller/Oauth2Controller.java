@@ -29,10 +29,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 5:20 下午
- */
+
 @Slf4j
 @Controller
 @RequestMapping("/oauth")

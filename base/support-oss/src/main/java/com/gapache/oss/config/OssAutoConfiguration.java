@@ -7,10 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.Assert;
 
-/**
- * @author HuSen
- * @since 2020/8/28 10:23 上午
- */
 @Configuration
 @EnableConfigurationProperties(OssProperties.class)
 public class OssAutoConfiguration {

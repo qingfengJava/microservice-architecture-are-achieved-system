@@ -1,8 +1,5 @@
 package com.gapache.commons.security;
 
-/**
- * @author HuSen
- */
 public class HexUtil {
 
     /**

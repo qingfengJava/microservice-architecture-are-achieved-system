@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import java.util.Random;
 
-/**
- * @author HuSen
- * create on 2020/1/20 10:41
- */
 public class MyTest5 {
     public static void main(String[] args) {
         // 在初始化一个类时，并不会先初始化它所实现的接口

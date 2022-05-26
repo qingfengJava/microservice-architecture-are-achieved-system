@@ -5,10 +5,6 @@ import org.springframework.lang.NonNull;
 
 import java.util.Optional;
 
-/**
- * @author HuSen
- * create on 2020/4/29 3:47 下午
- */
 public class EntityAuditorAware implements AuditorAware<Long> {
 
     @NonNull

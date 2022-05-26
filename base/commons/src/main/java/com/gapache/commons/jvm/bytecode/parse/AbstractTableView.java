@@ -4,10 +4,6 @@ import com.gapache.commons.jvm.bytecode.parse.attribute.AbstractAttributeInfo;
 
 import java.util.*;
 
-/**
- * @author HuSen
- * create on 2020/3/30 4:50 下午
- */
 public abstract class AbstractTableView extends AbstractAttributeInfo {
 
     private static final String SPACING = "  ";

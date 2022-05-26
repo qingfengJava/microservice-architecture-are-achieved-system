@@ -8,14 +8,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
+
 public interface CourseTaskMapper extends BaseMapper<CourseTask> {
     List<CourseTask> getByCourseId(Long id);
 

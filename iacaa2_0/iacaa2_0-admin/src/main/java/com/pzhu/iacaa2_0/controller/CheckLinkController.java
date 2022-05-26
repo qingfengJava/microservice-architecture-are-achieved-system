@@ -18,14 +18,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @RestController
 @RequestMapping("/checkLink")
 @NeedAuth("CheckLink")

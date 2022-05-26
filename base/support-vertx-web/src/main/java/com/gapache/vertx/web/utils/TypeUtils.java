@@ -1,14 +1,8 @@
 package com.gapache.vertx.web.utils;
 
-import com.alibaba.fastjson.JSON;
-
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
-/**
- * @author HuSen
- * @since 2021/3/3 1:02 下午
- */
 public class TypeUtils {
 
     public static Class<?> getActualClass(Type type) {

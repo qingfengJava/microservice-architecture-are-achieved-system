@@ -22,18 +22,6 @@ import org.springframework.util.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * 首先当某个应用要接入此认证中心时，我们为其颁发一个clientId和clientSecret，如果需要签名的会为其颁发公私钥
- * 签名规则见签名规则
- * 颁发的client会自动拥有应用的所有scope，当然这需要我们标识出这个应用是谁
- * 通过配置com.gapache.security.client-id即可实现
- *
- * TODO 画一个认证中心架构和流程图，判断设计是否合理
- * TODO 出一个认证中心的说明书
- *
- * @author 清风学Java
- * @since 2020/7/30 10:15 下午
- */
 @Slf4j
 @SpringBootApplication
 @EnableDiscoveryClient

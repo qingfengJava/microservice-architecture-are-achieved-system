@@ -9,10 +9,6 @@ import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:17 下午
- */
 @Setter
 @Getter
 @ToString

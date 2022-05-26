@@ -15,10 +15,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * @author 清风学Java
- * @since 2020/8/9 5:44 下午
- */
 @Slf4j
 @Order(0)
 @WebFilter(filterName = "accessCardPersistenceFilter", urlPatterns = "/*")

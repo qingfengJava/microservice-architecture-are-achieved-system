@@ -12,12 +12,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.function.Function;
 
-/**
- * <link>https://help.aliyun.com/document_detail/145212.html?spm=a2c4g.11186623.6.813.5a254ebcwssZDF</link>
- *
- * @author HuSen
- * @since 2020/8/28 10:30 上午
- */
 @Slf4j
 public class OssTemplate {
 

@@ -5,12 +5,6 @@ import javax.crypto.spec.PBEKeySpec;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 
-/**
- * Java将 PBKDF2 算法实现为 PBKDF2WithHmacSHA1
- *
- * @author HuSen
- * create on 2020/1/8 15:07
- */
 public class PBKDF2Utils {
 
     private static final String ALGORITHM = "PBKDF2WithHmacSHA1";

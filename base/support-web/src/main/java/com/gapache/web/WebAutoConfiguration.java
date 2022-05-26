@@ -29,10 +29,6 @@ import java.lang.reflect.Parameter;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/1/14 17:54
- */
 @Configuration
 public class WebAutoConfiguration {
 

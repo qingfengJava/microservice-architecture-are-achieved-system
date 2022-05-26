@@ -6,10 +6,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author HuSen
- * @since 2021/3/1 3:01 下午
- */
 @Configuration
 @EnableConfigurationProperties(VertxSettings.class)
 public class VertxManagerAutoConfiguration {

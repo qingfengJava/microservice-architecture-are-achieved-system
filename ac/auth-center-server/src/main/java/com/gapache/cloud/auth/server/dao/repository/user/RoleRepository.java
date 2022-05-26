@@ -8,10 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/1/26 9:47 上午
- */
+
 public interface RoleRepository extends BaseJpaRepository<RoleEntity, Long> {
 
     RoleEntity findByName(String name);

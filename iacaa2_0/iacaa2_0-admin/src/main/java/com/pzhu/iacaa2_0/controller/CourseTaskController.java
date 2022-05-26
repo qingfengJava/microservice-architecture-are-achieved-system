@@ -18,14 +18,6 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @RestController
 @RequestMapping("/courseTask")
 @NeedAuth("CourseTask")

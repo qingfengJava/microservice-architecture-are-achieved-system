@@ -17,10 +17,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author HuSen
- * @since 2021/3/15 11:31 上午
- */
 @Slf4j
 public class Test {
 

@@ -8,12 +8,6 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.math.BigInteger;
 
-/**
- * 我的字节码解析工具
- *
- * @author HuSen
- * create on 2020/3/24 6:06 下午
- */
 public class MyByteCodeParser {
 
     private String filePath;

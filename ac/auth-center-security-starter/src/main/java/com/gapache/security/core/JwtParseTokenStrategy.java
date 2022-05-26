@@ -5,10 +5,7 @@ import com.gapache.security.interfaces.ParseTokenStrategy;
 import com.gapache.security.model.AccessCard;
 import com.gapache.security.model.AuthorizeInfoDTO;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 1:57 下午
- */
+
 public class JwtParseTokenStrategy implements ParseTokenStrategy {
 
     @Override

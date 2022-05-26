@@ -16,12 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Sentinel全局异常处理
- *
- * @author HuSen
- * @since 2021/3/11 9:24 上午
- */
 @Slf4j
 public class GlobalExceptionHandler implements BlockExceptionHandler {
 

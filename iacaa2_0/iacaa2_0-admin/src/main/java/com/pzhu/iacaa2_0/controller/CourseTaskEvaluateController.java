@@ -5,14 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @RestController
 @RequestMapping("/courseTaskEvaluate")
 public class CourseTaskEvaluateController {

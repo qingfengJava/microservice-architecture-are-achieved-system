@@ -13,14 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-04-21
- */
+
 @Service
 public class StuScoreServiceImpl extends ServiceImpl<StuScoreMapper, StuScore> implements IStuScoreService {
     @Autowired

@@ -2,10 +2,6 @@ package com.gapache.vertx.core;
 
 import org.springframework.util.StringUtils;
 
-/**
- * @author HuSen
- * @since 2021/3/2 3:18 下午
- */
 public class PathHelper {
 
     private static final String SUB_PATH_PREFIX = "/";

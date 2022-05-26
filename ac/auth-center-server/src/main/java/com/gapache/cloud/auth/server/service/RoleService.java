@@ -9,10 +9,6 @@ import com.gapache.security.model.RoleUpdateDTO;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/1/26 9:56 上午
- */
 public interface RoleService {
 
     Boolean create(RoleCreateDTO dto);

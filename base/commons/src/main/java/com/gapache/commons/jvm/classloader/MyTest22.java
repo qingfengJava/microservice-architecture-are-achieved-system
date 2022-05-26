@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/3/16 4:31 下午
- */
 public class MyTest22 implements Runnable {
 
     private Thread thread;

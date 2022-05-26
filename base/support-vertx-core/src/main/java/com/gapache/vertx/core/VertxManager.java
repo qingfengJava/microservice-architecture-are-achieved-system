@@ -8,10 +8,6 @@ import io.vertx.core.eventbus.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 
-/**
- * @author HuSen
- * @since 2021/3/1 2:55 下午
- */
 @Slf4j
 public class VertxManager {
 

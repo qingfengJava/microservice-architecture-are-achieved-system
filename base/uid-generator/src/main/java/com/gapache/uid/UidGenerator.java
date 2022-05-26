@@ -2,12 +2,6 @@ package com.gapache.uid;
 
 import com.gapache.uid.exception.UidGenerateException;
 
-/**
- * Represents a unique id generator.
- *
- * @author HuSen
- * create on 2020/1/9 16:48
- */
 public interface UidGenerator {
 
     /**

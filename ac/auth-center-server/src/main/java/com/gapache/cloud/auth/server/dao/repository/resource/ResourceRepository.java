@@ -6,10 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 6:03 下午
- */
 public interface ResourceRepository extends BaseJpaRepository<ResourceEntity, Long>, ResourceDao {
 
     /**

@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.bytecode;
 
-/**
- * @author HuSen
- * create on 2020/4/14 4:31 下午
- */
 public class MyTest5 {
 
     /*

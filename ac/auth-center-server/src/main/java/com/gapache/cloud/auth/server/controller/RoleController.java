@@ -16,10 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/1/26 9:57 上午
- */
 @RestController
 @Validating
 @RequestMapping("/api/role")

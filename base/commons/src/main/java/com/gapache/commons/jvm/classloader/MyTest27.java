@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import java.sql.DriverManager;
 
-/**
- * @author HuSen
- * create on 2020/3/16 5:56 下午
- */
 public class MyTest27 {
 
     public static void main(String[] args) throws Exception {

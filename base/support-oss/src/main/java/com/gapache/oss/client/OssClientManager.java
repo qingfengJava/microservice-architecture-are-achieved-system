@@ -4,10 +4,6 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import lombok.Getter;
 
-/**
- * @author HuSen
- * @since 2020/8/28 10:27 上午
- */
 @Getter
 public class OssClientManager {
 

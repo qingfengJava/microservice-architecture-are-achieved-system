@@ -2,10 +2,6 @@ package com.gapache.security.interfaces;
 
 import com.gapache.security.model.ResourceReportDTO;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 6:04 下午
- */
 public interface ResourceReceiver {
 
     /**

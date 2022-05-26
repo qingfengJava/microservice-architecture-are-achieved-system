@@ -6,14 +6,6 @@ import com.pzhu.iacaa2_0.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-/**
- * <p>
- *
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_course_target")

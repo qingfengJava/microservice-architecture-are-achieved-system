@@ -9,11 +9,6 @@ import com.gapache.user.server.service.UserCustomizeInfoService;
 //import com.gapache.web.Validating;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:12 下午
- */
-//@Validating
 @RestController
 @RequestMapping("/api/userCustomizeInfo")
 @NeedAuth("UserCustomizeInfo")

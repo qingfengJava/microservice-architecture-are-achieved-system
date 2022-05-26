@@ -20,14 +20,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-04-06
- */
 @RestController
 @RequestMapping("/stuEvaluation")
 public class StuEvaluationController {

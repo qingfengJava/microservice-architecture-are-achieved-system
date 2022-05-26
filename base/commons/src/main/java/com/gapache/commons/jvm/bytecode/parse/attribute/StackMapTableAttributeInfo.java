@@ -5,10 +5,6 @@ import com.gapache.commons.jvm.bytecode.parse.ByteCode;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/4/1 4:40 下午
- */
 public class StackMapTableAttributeInfo extends AbstractTableView {
     @Override
     public int rowsHexLength() {

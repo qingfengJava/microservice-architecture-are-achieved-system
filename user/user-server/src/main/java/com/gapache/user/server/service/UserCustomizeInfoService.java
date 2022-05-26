@@ -2,10 +2,6 @@ package com.gapache.user.server.service;
 
 import com.gapache.user.common.model.vo.UserCustomizeInfoVO;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:09 下午
- */
 public interface UserCustomizeInfoService {
 
     UserCustomizeInfoVO create(UserCustomizeInfoVO vo);

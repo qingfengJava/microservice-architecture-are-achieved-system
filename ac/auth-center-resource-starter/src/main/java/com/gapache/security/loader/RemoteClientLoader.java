@@ -6,10 +6,6 @@ import com.gapache.security.interfaces.ClientLoader;
 import com.gapache.security.model.ClientDTO;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author 清风学Java
- * @since 2021/1/25 5:29 下午
- */
 public class RemoteClientLoader implements ClientLoader {
 
     private final RestTemplate restTemplate;

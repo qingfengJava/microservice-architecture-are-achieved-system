@@ -7,10 +7,6 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Set;
 
-/**
- * @author 清风学Java
- * @since 2021/1/26 9:58 上午
- */
 @Data
 public class RoleCreateDTO implements Serializable {
     private static final long serialVersionUID = 3825742211662606703L;

@@ -6,10 +6,6 @@ import org.springframework.core.io.ClassPathResource;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * @author HuSen
- * @since 2021/1/29 10:58 上午
- */
 public class ClasspathSqlLoader extends AbstractPathSqlLoader {
 	
 	private final String path;

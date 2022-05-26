@@ -5,12 +5,6 @@ import lombok.Setter;
 
 import java.util.Stack;
 
-/**
- * 单链表，有顺序的
- *
- * @author HuSen
- * @since 2020/5/29 5:13 下午
- */
 public class LinkedList {
     /** 标识节点，下一个节点是链表头 */
     private Node sign = new Node(0, null, null);

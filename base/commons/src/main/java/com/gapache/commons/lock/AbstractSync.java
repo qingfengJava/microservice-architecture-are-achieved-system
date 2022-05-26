@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
-/**
- * @author HuSen
- * @since 2020/7/30 1:49 下午
- */
 public abstract class AbstractSync extends AbstractQueuedSynchronizer {
     private static final long serialVersionUID = 1717547259579380305L;
 

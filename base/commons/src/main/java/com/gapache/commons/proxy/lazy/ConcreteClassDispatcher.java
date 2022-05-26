@@ -2,12 +2,6 @@ package com.gapache.commons.proxy.lazy;
 
 import net.sf.cglib.proxy.Dispatcher;
 
-/**
- * 每次都懒加载
- *
- * @author HuSen
- * @since 2020/5/27 2:06 下午
- */
 public class ConcreteClassDispatcher implements Dispatcher {
 
     @Override

@@ -12,10 +12,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-/**
- * @author 清风学Java
- * @since 2020/8/10 9:08 上午
- */
+
 @Slf4j
 @Aspect
 @Component

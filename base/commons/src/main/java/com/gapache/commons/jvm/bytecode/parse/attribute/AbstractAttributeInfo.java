@@ -9,10 +9,6 @@ import lombok.Setter;
 
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:03
- */
 @Setter
 @Getter
 public abstract class AbstractAttributeInfo {

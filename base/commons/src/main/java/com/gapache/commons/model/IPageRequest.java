@@ -5,10 +5,6 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-/**
- * @author HuSen
- * create on 2019/9/11 15:30
- */
 @Getter
 @Setter
 public class IPageRequest<T> implements Serializable {

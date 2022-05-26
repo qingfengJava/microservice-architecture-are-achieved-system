@@ -7,14 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
 @Repository
 public interface CourseMapper extends BaseMapper<Course> {
     /**

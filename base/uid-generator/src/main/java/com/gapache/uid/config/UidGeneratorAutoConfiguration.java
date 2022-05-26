@@ -11,10 +11,6 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 
-/**
- * @author HuSen
- * create on 2020/1/10 15:09
- */
 @Slf4j
 @Data
 @ConditionalOnBean(annotation = EnableUidGenerator.class)

@@ -4,10 +4,6 @@ import com.alipay.easysdk.factory.Factory;
 import com.alipay.easysdk.kernel.Config;
 import com.alipay.easysdk.payment.facetoface.models.AlipayTradePayResponse;
 
-/**
- * @author HuSen
- * @since 2021/1/18 1:25 下午
- */
 public class Demo {
     public static void main(String[] args) throws Exception {
 

@@ -10,10 +10,6 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 import java.io.UnsupportedEncodingException;
 
-/**
- * @author HuSen
- * @since 2020/7/16 1:15 下午
- */
 @Slf4j
 public class Consumer {
 

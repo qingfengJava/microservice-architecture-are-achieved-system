@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author 清风学Java
- * @since 2020/8/3 10:33 上午
- */
 @Data
 public class RefreshTokenDTO implements Serializable {
     private static final long serialVersionUID = 4970429787063539266L;

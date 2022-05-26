@@ -7,10 +7,6 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2019/12/5 11:32
- */
 @Slf4j
 public class RedisLuaExecutor {
 

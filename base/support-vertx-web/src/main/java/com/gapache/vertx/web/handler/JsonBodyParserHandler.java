@@ -7,12 +7,6 @@ import io.vertx.ext.web.RoutingContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
 
-/**
- * 解析json body的处理器
- *
- * @author HuSen
- * @since 2021/3/1 6:40 下午
- */
 @Slf4j
 public class JsonBodyParserHandler implements Handler<RoutingContext> {
 

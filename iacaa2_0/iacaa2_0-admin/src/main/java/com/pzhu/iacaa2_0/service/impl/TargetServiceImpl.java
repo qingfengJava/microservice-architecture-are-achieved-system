@@ -16,14 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
+
 @Service
 public class TargetServiceImpl extends ServiceImpl<TargetMapper, Target> implements ITargetService {
     @Autowired

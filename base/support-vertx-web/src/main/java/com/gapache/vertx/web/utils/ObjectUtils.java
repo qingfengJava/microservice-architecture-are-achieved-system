@@ -3,10 +3,6 @@ package com.gapache.vertx.web.utils;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-/**
- * @author HuSen
- * @since 2021/3/3 9:28 上午
- */
 public class ObjectUtils {
 
     public static boolean isSimpleValue(Class<?> arg0Class) {

@@ -23,10 +23,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author 清风学Java
- * @since 2021/3/25 5:02 下午
- */
 @Service
 public class PositionServiceImpl implements PositionService {
 

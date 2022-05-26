@@ -27,10 +27,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author HuSen
- * @since 2021/3/8 1:06 下午
- */
 @Slf4j
 public class SimpleRedisRepository {
 

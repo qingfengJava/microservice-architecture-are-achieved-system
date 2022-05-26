@@ -10,13 +10,6 @@ import org.springframework.util.StringUtils;
 
 import java.util.Map;
 
-/**
- * 请求帮助工具，返回
- * Future<AsyncResult<HttpClientResponse>>
- *
- * @author HuSen
- * @since 2021/3/2 1:36 下午
- */
 public class HttpRequestHelper {
 
     @SuppressWarnings("unchecked")

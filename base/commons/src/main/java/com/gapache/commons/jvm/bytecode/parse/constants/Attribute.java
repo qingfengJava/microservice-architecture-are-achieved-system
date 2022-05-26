@@ -7,10 +7,6 @@ import java.util.Arrays;
 
 import static com.gapache.commons.jvm.bytecode.parse.func.impl.AttributePrinterImpls.*;
 
-/**
- * @author HuSen
- * create on 2020/3/30 2:07 下午
- */
 @Getter
 public enum Attribute {
     //

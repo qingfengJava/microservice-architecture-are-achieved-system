@@ -7,10 +7,6 @@ import org.springframework.util.ConcurrentReferenceHashMap;
 
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/3/3 10:36 上午
- */
 public class CachingSpringLoadBalancerFactory {
 
     protected final SpringClientFactory factory;

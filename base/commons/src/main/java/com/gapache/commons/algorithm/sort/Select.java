@@ -2,10 +2,6 @@ package com.gapache.commons.algorithm.sort;
 
 import java.util.Arrays;
 
-/**
- * @author HuSen
- * @since 2020/7/17 11:12 上午
- */
 public class Select {
 
     public static void sort(int[] arr) {

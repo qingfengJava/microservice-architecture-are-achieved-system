@@ -1,11 +1,5 @@
 package com.gapache.commons.lock;
 
-/**
- * 公平锁
- *
- * @author HuSen
- * @since 2020/7/30 2:15 下午
- */
 public final class FairSync extends AbstractSync {
     private static final long serialVersionUID = 6849297031455456366L;
 

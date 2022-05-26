@@ -19,14 +19,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 清风学Java
- * @since 2021-04-21
- */
 @RestController
 @NeedAuth("CourseTaskCheckLink")
 @RequestMapping("/courseTaskCheckLink")

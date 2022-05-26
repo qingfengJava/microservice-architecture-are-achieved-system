@@ -10,10 +10,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 10:19 上午
- */
 public interface UserService extends UserDetailsService {
 
     /**

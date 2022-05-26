@@ -8,14 +8,7 @@ import com.pzhu.iacaa2_0.entityVo.TargetVo;
 
 import java.util.List;
 
-/**
- * <p>
- *  服务类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
+
 public interface ITargetService extends IService<Target> {
     Boolean summaryThisYearTargetsGrade(Integer year);
 

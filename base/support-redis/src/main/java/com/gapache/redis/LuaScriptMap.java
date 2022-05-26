@@ -12,10 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2019/12/5 11:37
- */
 @Slf4j
 public class LuaScriptMap {
 

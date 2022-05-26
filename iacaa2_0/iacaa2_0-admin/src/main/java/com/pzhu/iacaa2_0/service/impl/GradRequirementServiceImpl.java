@@ -20,14 +20,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
 @Service
 public class GradRequirementServiceImpl extends ServiceImpl<GradRequirementMapper, GradRequirement> implements IGradRequirementService {
     @Autowired

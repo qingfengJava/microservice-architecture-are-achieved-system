@@ -6,10 +6,6 @@ import org.springframework.beans.BeanUtils;
 import java.lang.reflect.Field;
 import java.util.*;
 
-/**
- * @author HuSen
- * @since 2020/9/24 7:27 下午
- */
 public class BeanCopyUtils extends BeanUtils {
 
     public static void copyIgnoreProperties(Object source, Object target) {

@@ -8,10 +8,6 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author 清风学Java
- * @since 2020/8/5 11:07 上午
- */
 @Data
 public class AccessCard {
     @Tag(1)

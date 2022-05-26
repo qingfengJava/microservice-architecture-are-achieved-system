@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.memory;
 
-/**
- * @author HuSen
- * create on 2020/4/20 3:52 下午
- */
 public class MyTest5 {
 
     public static void main(String[] args) throws InterruptedException {

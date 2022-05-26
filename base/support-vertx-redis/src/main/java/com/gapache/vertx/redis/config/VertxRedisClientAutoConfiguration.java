@@ -13,10 +13,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-/**
- * @author HuSen
- * @since 2021/3/5 5:30 下午
- */
 @Slf4j
 @Configuration
 public class VertxRedisClientAutoConfiguration {

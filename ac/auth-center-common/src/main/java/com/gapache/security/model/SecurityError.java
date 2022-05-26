@@ -3,10 +3,6 @@ package com.gapache.security.model;
 import com.gapache.commons.model.Error;
 import lombok.Getter;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 2:22 下午
- */
 @Getter
 public enum SecurityError implements Error {
     //

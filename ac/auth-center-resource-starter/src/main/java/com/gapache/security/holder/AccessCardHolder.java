@@ -3,10 +3,6 @@ package com.gapache.security.holder;
 import com.gapache.security.interfaces.AccessCardHolderStrategy;
 import com.gapache.security.model.AccessCard;
 
-/**
- * @author 清风学Java
- * @since 2020/8/9 6:26 下午
- */
 public class AccessCardHolder {
 
     private static final AccessCardHolderStrategy STRATEGY = new InheritableThreadLocalAccessCardHolderStrategy();

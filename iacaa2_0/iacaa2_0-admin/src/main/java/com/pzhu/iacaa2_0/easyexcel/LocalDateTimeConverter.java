@@ -9,12 +9,6 @@ import com.alibaba.excel.metadata.property.ExcelContentProperty;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * @author 清风学Javag
- * @version V1.0
- * @Title: LocalDateTimeConverter
- * @date 2021/5/1316:57
- */
 public class LocalDateTimeConverter implements Converter<LocalDateTime> {
 
     @Override

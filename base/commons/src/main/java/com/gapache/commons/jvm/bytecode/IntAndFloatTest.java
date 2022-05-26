@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.bytecode;
 
-/**
- * @author HuSen
- * create on 2020/3/19 4:34 下午
- */
 public class IntAndFloatTest {
     private final int a = 10;
     private final int b = 10;

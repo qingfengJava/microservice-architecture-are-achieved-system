@@ -32,10 +32,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:08 下午
- */
 @Service
 public class UserServiceImpl implements UserService {
 

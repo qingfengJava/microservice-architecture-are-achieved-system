@@ -12,10 +12,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-/**
- * @author 清风学Java
- * @since 2021/2/1 4:20 下午
- */
 @Slf4j
 public class DefaultSignChecker implements SignChecker {
 

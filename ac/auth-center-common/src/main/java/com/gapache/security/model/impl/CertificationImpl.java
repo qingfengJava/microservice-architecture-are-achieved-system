@@ -3,10 +3,6 @@ package com.gapache.security.model.impl;
 import com.gapache.security.model.Certification;
 import lombok.*;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 1:37 下午
- */
 @Setter
 @Getter
 @ToString

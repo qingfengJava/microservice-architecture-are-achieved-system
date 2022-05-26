@@ -1,9 +1,6 @@
 package com.gapache.cloud.auth.server.constant;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 5:06 下午
- */
+
 public enum GrantType {
     // 授权码
     authorization_code,

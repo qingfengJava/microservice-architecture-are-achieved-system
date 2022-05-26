@@ -6,10 +6,6 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @author 清风学Java
- * @since 2021/3/24 5:53 下午
- */
 @Data
 public class RolePermissionDTO implements Serializable {
     private static final long serialVersionUID = -6465671182317804619L;

@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.classloader;
 
-/**
- * @author HuSen
- * create on 2020/1/21 11:47
- */
 public class MyTest9 {
     public static void main(String[] args) throws ClassNotFoundException {
         // getClassLoader()方法了解

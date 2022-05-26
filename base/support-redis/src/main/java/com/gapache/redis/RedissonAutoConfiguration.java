@@ -14,10 +14,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.Assert;
 
-/**
- * @author HuSen
- * @since 2021/1/28 2:33 下午
- */
 @Slf4j
 @Configuration
 @EnableConfigurationProperties(RedissonProperties.class)

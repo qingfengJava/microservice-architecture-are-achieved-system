@@ -4,10 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-/**
- * @author 清风学Java
- * @since 2020/8/3 9:05 上午
- */
+
 @Data
 @Entity
 @Table(name = "tb_user_client_relation")

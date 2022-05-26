@@ -17,14 +17,6 @@ import java.sql.Wrapper;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
 @Service
 public class CourseTaskServiceImpl extends ServiceImpl<CourseTaskMapper, CourseTask> implements ICourseTaskService {
     @Autowired

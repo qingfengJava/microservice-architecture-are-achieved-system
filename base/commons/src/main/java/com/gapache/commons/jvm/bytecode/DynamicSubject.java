@@ -3,10 +3,6 @@ package com.gapache.commons.jvm.bytecode;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-/**
- * @author HuSen
- * create on 2020/4/15 4:59 下午
- */
 public class DynamicSubject implements InvocationHandler {
 
     private Object sub;

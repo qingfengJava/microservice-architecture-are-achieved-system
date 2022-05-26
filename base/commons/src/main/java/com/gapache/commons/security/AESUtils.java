@@ -10,10 +10,6 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-/**
- * @author HuSen
- * create on 2020/1/8 11:29
- */
 public class AESUtils {
 
     /**

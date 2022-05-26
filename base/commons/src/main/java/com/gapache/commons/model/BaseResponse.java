@@ -1,9 +1,5 @@
 package com.gapache.commons.model;
 
-/**
- * @author HuSen
- * @since 2021/1/18 10:41 上午
- */
 public interface BaseResponse {
 
     /**

@@ -3,10 +3,6 @@ package com.gapache.commons.security;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- * @author HuSen
- * create on 2020/1/8 14:45
- */
 public class HashUtils {
 
     public static final String MD5 = "MD5";

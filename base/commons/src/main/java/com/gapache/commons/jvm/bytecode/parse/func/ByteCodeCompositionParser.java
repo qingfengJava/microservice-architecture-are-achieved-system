@@ -3,10 +3,6 @@ package com.gapache.commons.jvm.bytecode.parse.func;
 import com.gapache.commons.jvm.bytecode.parse.ByteCode;
 import com.gapache.commons.jvm.bytecode.parse.constants.ByteCodeComposition;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:00
- */
 @FunctionalInterface
 public interface ByteCodeCompositionParser {
 

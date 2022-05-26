@@ -5,10 +5,6 @@ import com.gapache.commons.jvm.bytecode.parse.ByteCode;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:04
- */
 public class CodeAttributeInfo extends AbstractTableView {
 
     @Override

@@ -2,10 +2,7 @@ package com.gapache.cloud.auth.server.utils;
 
 import com.netflix.config.DynamicPropertyFactory;
 
-/**
- * @author 清风学Java
- * @since 2021/2/2 1:50 下午
- */
+
 public class DynamicPropertyUtils {
 
     private final static DynamicPropertyFactory

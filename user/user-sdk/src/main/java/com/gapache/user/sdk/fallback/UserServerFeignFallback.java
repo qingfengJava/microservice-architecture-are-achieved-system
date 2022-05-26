@@ -10,10 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/8/26 9:38 上午
- */
 @Slf4j
 @Component
 public class UserServerFeignFallback implements UserServerFeign {

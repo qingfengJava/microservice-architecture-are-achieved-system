@@ -6,10 +6,6 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
-/**
- * @author HuSen
- * @since 2021/1/25 11:50 上午
- */
 @Getter
 @Setter
 @ToString

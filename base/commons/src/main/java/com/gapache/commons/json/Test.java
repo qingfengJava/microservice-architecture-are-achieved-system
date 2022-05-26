@@ -5,10 +5,6 @@ import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-/**
- * @author HuSen
- * create on 2020/3/16 6:14 下午
- */
 public class Test {
     public static void main(String[] args) {
 

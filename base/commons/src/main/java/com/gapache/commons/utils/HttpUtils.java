@@ -11,10 +11,6 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/4/12 12:59
- */
 public class HttpUtils {
 
     private static final CloseableHttpClient SYNC_CLIENT;

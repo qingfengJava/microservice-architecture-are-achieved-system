@@ -2,10 +2,7 @@ package com.gapache.security.annotation;
 
 import java.lang.annotation.*;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 4:30 下午
- */
+
 @Inherited
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

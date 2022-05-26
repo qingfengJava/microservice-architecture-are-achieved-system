@@ -4,10 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * @author 清风学Java
- * @since 2020/8/4 3:49 下午
- */
 @Controller
 public class LoginLogoutController {
 

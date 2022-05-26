@@ -6,12 +6,6 @@ import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * DateUtils provides date formatting, parsing
- *
- * @author HuSen
- * create on 2020/1/9 15:15
- */
 public abstract class DateUtils extends org.apache.commons.lang3.time.DateUtils {
     /**
      * Patterns

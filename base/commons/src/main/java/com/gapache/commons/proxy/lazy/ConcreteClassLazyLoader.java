@@ -2,12 +2,6 @@ package com.gapache.commons.proxy.lazy;
 
 import net.sf.cglib.proxy.LazyLoader;
 
-/**
- * 只有第一次懒加载
- *
- * @author HuSen
- * @since 2020/5/27 2:02 下午
- */
 public class ConcreteClassLazyLoader implements LazyLoader {
 
     /**

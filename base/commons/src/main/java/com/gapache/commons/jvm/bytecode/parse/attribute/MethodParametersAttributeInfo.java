@@ -10,10 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/3/30 4:56 下午
- */
 public class MethodParametersAttributeInfo extends AbstractTableView {
 
     private List<List<String>> trs;

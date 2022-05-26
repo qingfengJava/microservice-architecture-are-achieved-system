@@ -10,10 +10,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * @author 清风学Java
- * @since 2020/8/3 9:11 上午
- */
 @Service
 public class UserClientRelationServiceImpl implements UserClientRelationService {
 

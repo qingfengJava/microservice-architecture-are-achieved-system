@@ -7,10 +7,6 @@ import com.gapache.user.common.model.vo.SaveUserRelationVO;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2021/1/25 1:08 下午
- */
 public interface UserService {
 
     UserVO create(UserVO vo);

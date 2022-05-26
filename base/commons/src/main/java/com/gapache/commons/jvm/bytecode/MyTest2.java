@@ -1,17 +1,5 @@
 package com.gapache.commons.jvm.bytecode;
 
-/**
- * java -verbose -p(打印私有信息)
- *
- * synchronized
- * moniterenter
- * moniterexit
- *
- * 构造方法和静态代码块字节码指令详解
- *
- * @author HuSen
- * create on 2020/3/23 3:45 下午
- */
 public class MyTest2 {
 
     String str = "Welcome";

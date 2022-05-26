@@ -14,13 +14,6 @@ import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author ZhaoZezhong
- * @version V1.0
- * @Title: QrCodeUtil
- * @Description: Company:成都平凡谷科技有限责任公司
- * @date 2021/4/79:09
- */
 public class QrCodeUtil {
     public static void main(String[] args) {
         String url = "http://www.baidu.com";

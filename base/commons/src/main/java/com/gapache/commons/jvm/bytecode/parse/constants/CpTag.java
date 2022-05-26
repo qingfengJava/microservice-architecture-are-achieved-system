@@ -10,10 +10,6 @@ import java.util.Arrays;
 import static com.gapache.commons.jvm.bytecode.parse.func.impl.ConstantInfoParserImpls.*;
 import static com.gapache.commons.jvm.bytecode.parse.func.impl.ConstantInfoPrinterImpls.*;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:22
- */
 @Getter
 public enum CpTag {
     //

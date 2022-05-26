@@ -1,9 +1,5 @@
 package com.gapache.commons.algorithm.leetcode;
 
-/**
- * @author HuSen
- * @since 2020/7/20 2:25 下午
- */
 public class Question4 {
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {

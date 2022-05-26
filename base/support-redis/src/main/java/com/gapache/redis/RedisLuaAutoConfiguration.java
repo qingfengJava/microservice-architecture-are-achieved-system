@@ -10,10 +10,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/1/11 11:51
- */
 @Slf4j
 @ConditionalOnBean(annotation = EnableRedisLua.class)
 public class RedisLuaAutoConfiguration {

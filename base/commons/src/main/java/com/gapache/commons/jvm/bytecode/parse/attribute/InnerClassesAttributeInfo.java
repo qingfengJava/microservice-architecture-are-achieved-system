@@ -12,10 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/3/30 4:53 下午
- */
+
 public class InnerClassesAttributeInfo extends AbstractTableView {
 
     private List<List<String>> trs;

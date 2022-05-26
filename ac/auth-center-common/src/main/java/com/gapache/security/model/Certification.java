@@ -3,10 +3,6 @@ package com.gapache.security.model;
 import java.io.Serializable;
 import java.security.Principal;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 12:42 下午
- */
 public interface Certification extends Principal, Serializable {
 
     /**

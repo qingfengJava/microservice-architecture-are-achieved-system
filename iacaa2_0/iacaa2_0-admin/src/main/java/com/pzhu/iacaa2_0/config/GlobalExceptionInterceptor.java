@@ -8,12 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-/**
- * @author 清风学Java
- * @version V1.0
- * @Title: GlobalExceptionInterceptor
- * @date 2021/4/139:30
- */
 @RestControllerAdvice(annotations = RestController.class)
 @Slf4j
 public class GlobalExceptionInterceptor {

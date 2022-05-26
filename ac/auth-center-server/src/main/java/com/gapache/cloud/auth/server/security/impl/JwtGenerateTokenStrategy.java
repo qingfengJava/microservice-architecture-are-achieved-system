@@ -7,12 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.security.PrivateKey;
 import java.util.Map;
 
-/**
- * jwt token 生成策略
- *
- * @author 清风学Javan
- * @since 2020/8/4 6:01 下午
- */
 @Slf4j
 public class JwtGenerateTokenStrategy implements GenerateTokenStrategy {
 

@@ -10,10 +10,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
-/**
- * @author HuSen
- * @since 2020/5/15 6:50 下午
- */
 public class LogTest {
 
     public static void main(String[] args) throws IOException {

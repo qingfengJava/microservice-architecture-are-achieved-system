@@ -63,10 +63,6 @@ import java.util.stream.Collectors;
 import static com.gapache.commons.model.AuthConstants.IS_ENABLED;
 import static com.gapache.commons.model.AuthConstants.TOKEN_HEADER;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 10:19 上午
- */
 @Slf4j
 @Service("userService")
 public class UserServiceImpl implements UserService, ApplicationListener<VertxCreatedEvent> {

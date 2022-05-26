@@ -6,10 +6,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
-/**
- * @author HuSen
- * create on 2020/5/6 2:05 下午
- */
 public class PageHelper {
 
     public static Pageable of(IPageRequest<?> pageRequest) {

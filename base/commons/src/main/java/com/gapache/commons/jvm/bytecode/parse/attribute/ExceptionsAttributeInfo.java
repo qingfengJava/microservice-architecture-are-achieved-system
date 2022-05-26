@@ -5,10 +5,6 @@ import com.gapache.commons.jvm.bytecode.parse.ByteCode;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/4/2 11:29 上午
- */
 public class ExceptionsAttributeInfo extends AbstractTableView {
 
     @Override

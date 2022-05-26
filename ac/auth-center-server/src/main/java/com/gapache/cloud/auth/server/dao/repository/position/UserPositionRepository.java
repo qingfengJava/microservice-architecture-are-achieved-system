@@ -7,10 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/3/26 2:18 下午
- */
 public interface UserPositionRepository extends JpaRepository<UserPositionEntity, Long> {
 
     UserPositionEntity findByUserIdAndPositionId(Long userId, Long positionId);

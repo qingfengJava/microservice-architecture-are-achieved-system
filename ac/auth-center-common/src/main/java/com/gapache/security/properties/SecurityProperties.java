@@ -4,10 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 1:10 下午
- */
 @Setter
 @Getter
 @ConfigurationProperties(prefix = "com.gapache.security")

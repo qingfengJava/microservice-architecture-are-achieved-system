@@ -2,12 +2,6 @@ package com.gapache.commons.algorithm.structure;
 
 import lombok.Data;
 
-/**
- * 链表实现栈
- *
- * @author HuSen
- * @since 2020/7/20 10:22 上午
- */
 public class LinkedListStack<E> {
 
     private StackNode<E> top;

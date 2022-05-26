@@ -23,10 +23,6 @@ import java.util.concurrent.TimeUnit;
 import static com.gapache.cloud.auth.server.constant.RedisConstants.REFRESH_TOKEN_PREFIX;
 import static com.gapache.cloud.auth.server.constant.RedisConstants.SCOPE_CACHE_PREFIX;
 
-/**
- * @author 清风学Java
- * @since 2020/8/5 10:04 上午
- */
 public abstract class BaseGenerateTokenLogic {
 
     private StringRedisTemplate stringRedisTemplate;

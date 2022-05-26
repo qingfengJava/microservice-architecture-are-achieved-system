@@ -24,10 +24,6 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/3/2 2:48 下午
- */
 @Slf4j
 public class ZeusClientProxy implements InvocationHandler {
 

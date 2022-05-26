@@ -11,10 +11,6 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/3/8 11:12 上午
- */
 public final class DescriptorUtils {
 
     private static final Map<Class<?>, RedisEntityDescriptor> DESCRIPTOR_MAP = new HashMap<>();

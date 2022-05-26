@@ -12,42 +12,6 @@ import org.springframework.beans.factory.InitializingBean;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Represents an implementation of {@link UidGenerator}
- * <p>
- * The unique id has 64bits (long), default allocated as blow:<br>
- * <li>sign: The highest bit is 0
- * <li>delta seconds: The next 28 bits, represents delta seconds since a customer epoch(2016-05-20 00:00:00.000).
- * Supports about 8.7 years until to 2024-11-20 21:24:16
- * <li>worker id: The next 22 bits, represents the worker's id which assigns based on database, max id is about 420W
- * <li>sequence: The next 13 bits, represents a sequence within the same second, max for 8192/s<br><br>
- * <p>
- * The {@link DefaultUidGenerator#parseUID(long)} is a tool method to parse the bits
- *
- * <pre>{@code
- * +------+----------------------+----------------+-----------+
- * | sign |     delta seconds    | worker node id | sequence  |
- * +------+----------------------+----------------+-----------+
- *   1bit          28bits              22bits         13bits
- * }</pre>
- * <p>
- * You can also specified the bits by Spring property setting.
- * <li>timeBits: default as 28
- * <li>workerBits: default as 22
- * <li>seqBits: default as 13
- * <li>epochStr: Epoch date string format 'yyyy-MM-dd'. Default as '2016-05-20'<p>
- *
- * <b>Note that:</b> The total bits must be 64 -1
- * 时间产生的影响
- * 1.未重机器调慢时间，抛出异常，拒绝产生ID。重启机器调快时间，调整后正常产生ID，在调整时间内没有ID产生
- * 2.重启机器调慢时间，将可能产生重复的ID，系统管理员需要保证不会发生这种情况。重启机器并调快时间，调整后正常产生ID，在调整时间内没有ID产生
- * 3.每四年一次同步闰秒会不会影响ID的产生？
- * 原子时钟和电子时钟每4年的误差为1秒，也就是说电子时钟每4年会比原子时钟慢1秒，所以每隔4年，网络时钟都会同步一次时间，但是本地机器Window、Linux等
- * 不会自动同步时间，需要手工同步，或者使用ntpdate向网络时钟同步。由于时钟是调快一秒，调整后不影响ID的产生，所以在调整的1秒内没有ID产生。
- *
- * @author HuSen
- * create on 2020/1/9 17:00
- */
 @Slf4j
 public class DefaultUidGenerator implements UidGenerator, InitializingBean {
 

@@ -2,12 +2,6 @@ package com.gapache.vertx.redis.annotation;
 
 import java.lang.annotation.*;
 
-/**
- * Redis Entity
- *
- * @author HuSen
- * @since 2021/3/8 10:51 上午
- */
 @Inherited
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

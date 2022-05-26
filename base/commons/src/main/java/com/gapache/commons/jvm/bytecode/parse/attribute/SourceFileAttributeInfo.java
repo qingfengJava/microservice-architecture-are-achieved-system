@@ -6,10 +6,6 @@ import com.gapache.commons.jvm.bytecode.parse.cp.ConstantItem;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * @author HuSen
- * create on 2020/3/30 4:52 下午
- */
 @Getter
 @Setter
 public class SourceFileAttributeInfo extends AbstractAttributeInfo {

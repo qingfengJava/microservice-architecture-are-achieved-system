@@ -1,9 +1,5 @@
 package com.gapache.commons.jvm.gc;
 
-/**
- * @author HuSen
- * create on 2020/5/7 11:28 上午
- */
 public class MyTest6 {
 
     public static void main(String[] args) {

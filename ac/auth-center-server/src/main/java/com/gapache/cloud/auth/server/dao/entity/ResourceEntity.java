@@ -4,12 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-/**
- * 资源
- *
- * @author 清风学Java
- * @since 2020/8/6 4:08 下午
- */
 @Data
 @Entity
 @Table(name = "tb_resource")

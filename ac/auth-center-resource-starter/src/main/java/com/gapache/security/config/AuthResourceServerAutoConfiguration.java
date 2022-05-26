@@ -39,10 +39,6 @@ import javax.annotation.Resource;
 import java.lang.reflect.Method;
 import java.util.*;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 4:15 下午
- */
 @Slf4j
 @Configuration
 @ConditionalOnBean(annotation = EnableAuthResourceServer.class)

@@ -7,10 +7,6 @@ import java.time.temporal.TemporalAccessor;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/4/3 3:24 下午
- */
 public class TimeUtils {
 
     public enum Format {

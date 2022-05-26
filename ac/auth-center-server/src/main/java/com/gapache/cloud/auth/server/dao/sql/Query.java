@@ -9,10 +9,6 @@ import com.gapache.jpa.primitive.impl.ClasspathSqlLoader;
 import javax.persistence.EntityManager;
 import java.util.Map;
 
-/**
- * @author HuSen
- * @since 2021/1/29 11:30 上午
- */
 public enum Query implements IQuery {
     FIND_ALL_RESOURCE(ResourceEntity.class, new ClasspathSqlLoader("sql/FindAllResourceById.sql"), ((query, parameters) -> {
         query.setParameter("id", parameters.get("id"));

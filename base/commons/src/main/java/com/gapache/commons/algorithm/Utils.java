@@ -1,9 +1,5 @@
 package com.gapache.commons.algorithm;
 
-/**
- * @author HuSen
- * @since 2020/5/27 5:23 下午
- */
 public class Utils {
 
     public static void print(int[][] array) {

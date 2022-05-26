@@ -8,12 +8,6 @@ import lombok.Data;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 我的字节码封装对象
- *
- * @author HuSen
- * create on 2020/3/28 00:00
- */
 @Data
 public class ByteCode {
     private String magicNumber;

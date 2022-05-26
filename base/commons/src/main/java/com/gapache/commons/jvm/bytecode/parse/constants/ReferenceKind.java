@@ -4,10 +4,6 @@ import lombok.Getter;
 
 import java.util.Arrays;
 
-/**
- * @author HuSen
- * create on 2020/3/30 11:22
- */
 @Getter
 public enum ReferenceKind {
     //

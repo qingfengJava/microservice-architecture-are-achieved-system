@@ -7,10 +7,6 @@ import io.vertx.core.Handler;
 import io.vertx.ext.web.RoutingContext;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author HuSen
- * @since 2021/3/1 7:03 下午
- */
 @Slf4j
 public class ReturnResultHandler implements Handler<RoutingContext> {
 

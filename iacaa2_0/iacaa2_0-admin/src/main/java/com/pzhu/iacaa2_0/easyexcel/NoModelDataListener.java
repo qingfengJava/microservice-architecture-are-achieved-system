@@ -16,12 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.*;
 
-/**
- * @author 清风学Java
- * @version V1.0
- * @Title: NoModelDataListener
- * @date 2021/5/149:14
- */
 public class NoModelDataListener extends AnalysisEventListener<Map<Integer, String>> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(NoModelDataListener.class);

@@ -5,10 +5,6 @@ import io.vertx.core.Handler;
 import io.vertx.ext.web.RoutingContext;
 import org.springframework.util.StringUtils;
 
-/**
- * @author HuSen
- * @since 2021/3/3 11:28 上午
- */
 public class ZeusJsonParserHandler implements Handler<RoutingContext> {
 
     @Override

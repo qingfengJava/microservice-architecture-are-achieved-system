@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/3/30 09:54
- */
 public class ByteCodeCompositionPrinterImpls {
 
     public static final ByteCodeCompositionPrinter MAGIC_NUMBER_PRINTER =

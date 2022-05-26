@@ -14,10 +14,7 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author HuSen
- * create on 2020/4/29 3:35 下午
- */
+
 @Getter
 @Setter
 @MappedSuperclass

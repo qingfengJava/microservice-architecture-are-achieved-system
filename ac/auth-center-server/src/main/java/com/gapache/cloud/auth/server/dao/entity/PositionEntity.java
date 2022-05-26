@@ -4,10 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-/**
- * @author 清风学Java
- * @since 2021/3/25 4:43 下午
- */
 @Data
 @Entity
 @Table(name = "tb_position")

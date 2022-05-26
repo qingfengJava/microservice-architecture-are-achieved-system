@@ -11,10 +11,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2020/7/31 10:15 上午
- */
 @Setter
 @ToString
 @AllArgsConstructor

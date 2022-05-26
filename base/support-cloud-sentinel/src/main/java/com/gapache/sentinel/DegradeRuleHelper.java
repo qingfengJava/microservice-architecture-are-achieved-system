@@ -2,10 +2,6 @@ package com.gapache.sentinel;
 
 import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRule;
 
-/**
- * @author HuSen
- * @since 2021/3/16 1:53 下午
- */
 public class DegradeRuleHelper {
 
     public static DegradeRule createDefault(String resource) {

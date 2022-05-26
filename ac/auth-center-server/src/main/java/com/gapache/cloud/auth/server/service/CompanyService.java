@@ -5,10 +5,6 @@ import com.gapache.security.model.ElmUiTreeNode;
 
 import java.util.List;
 
-/**
- * @author 清风学Java
- * @since 2021/3/26 11:12 上午
- */
 public interface CompanyService {
 
     Long create(CompanyDTO dto);

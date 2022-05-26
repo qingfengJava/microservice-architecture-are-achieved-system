@@ -9,10 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-/**
- * @author HuSen
- * @since 2020/8/26 9:44 上午
- */
 @Configuration
 @EnableFeignClients(basePackages = "com.gapache.user.sdk.feign")
 @ConditionalOnBean(annotation = EnableUserServerFeign.class)

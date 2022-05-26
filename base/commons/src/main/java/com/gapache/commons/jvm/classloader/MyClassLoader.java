@@ -2,10 +2,6 @@ package com.gapache.commons.jvm.classloader;
 
 import java.io.*;
 
-/**
- * @author HuSen
- * create on 2020/1/25 13:15
- */
 public class MyClassLoader extends ClassLoader {
 
     private String classDir;

@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author HuSen
- * @since 2021/1/18 10:38 上午
- */
 @Data
 public class ResponseHead implements Serializable {
     private static final long serialVersionUID = -5532480215283747616L;

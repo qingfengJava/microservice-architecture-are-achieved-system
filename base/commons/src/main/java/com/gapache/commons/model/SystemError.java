@@ -2,10 +2,6 @@ package com.gapache.commons.model;
 
 import lombok.Getter;
 
-/**
- * @author HuSen
- * @since 2020/8/3 10:21 上午
- */
 @Getter
 public enum SystemError implements Error {
     //

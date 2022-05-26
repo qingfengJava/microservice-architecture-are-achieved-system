@@ -1,11 +1,5 @@
 package com.gapache.commons.jvm.bytecode.parse.constants;
 
-/**
- * 助记符
- *
- * @author HuSen
- * create on 2020/4/1 11:31 上午
- */
 public enum Mnemonic {
     //
     aaload,

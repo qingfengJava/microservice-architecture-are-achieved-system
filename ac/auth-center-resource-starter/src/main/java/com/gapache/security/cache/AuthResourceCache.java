@@ -4,10 +4,6 @@ import com.gapache.security.annotation.AuthResource;
 
 import java.util.*;
 
-/**
- * @author 清风学Java
- * @since 2020/8/6 4:51 下午
- */
 public class AuthResourceCache extends HashMap<String, List<AuthResource>> {
     private static final long serialVersionUID = -6469356799640120224L;
 

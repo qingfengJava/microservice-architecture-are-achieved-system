@@ -4,9 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-/**
- * @author 清风学Java
- */
 @EnableDiscoveryClient
 @SpringBootApplication
 public class GatewayApplication {

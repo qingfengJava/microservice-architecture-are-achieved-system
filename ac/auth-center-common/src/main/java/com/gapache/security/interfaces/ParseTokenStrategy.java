@@ -2,12 +2,6 @@ package com.gapache.security.interfaces;
 
 import com.gapache.security.model.AccessCard;
 
-/**
- * 解析token的策略
- *
- * @author 清风学Java
- * @since 2020/8/5 1:41 下午
- */
 public interface ParseTokenStrategy {
 
     /**

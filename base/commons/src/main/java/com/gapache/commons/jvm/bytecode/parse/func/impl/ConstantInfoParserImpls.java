@@ -8,10 +8,6 @@ import com.gapache.commons.jvm.bytecode.parse.func.ConstantInfoParser;
 
 import java.nio.charset.StandardCharsets;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:28
- */
 public final class ConstantInfoParserImpls {
 
     public static final ConstantInfoParser VALUE_CONSTANT_INFO_PARSE = (cpTag, point, context, byteCode) -> {

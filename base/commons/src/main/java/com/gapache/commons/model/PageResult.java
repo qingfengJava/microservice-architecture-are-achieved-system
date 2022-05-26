@@ -10,10 +10,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * @author HuSen
- * create on 2019/9/11 14:25
- */
 @Getter
 @Setter
 public class PageResult<T> implements Serializable {

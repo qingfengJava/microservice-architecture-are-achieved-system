@@ -4,10 +4,6 @@ import com.gapache.security.interfaces.AccessCardHolderStrategy;
 import com.gapache.security.model.AccessCard;
 import org.springframework.util.Assert;
 
-/**
- * @author 清风学Java
- * @since 2020/8/9 6:18 下午
- */
 public class InheritableThreadLocalAccessCardHolderStrategy implements AccessCardHolderStrategy {
 
     private static final ThreadLocal<AccessCard> CONTEXT_HOLDER = new InheritableThreadLocal<>();

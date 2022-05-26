@@ -3,12 +3,6 @@ package com.gapache.vertx.web.server;
 import org.springframework.boot.web.server.WebServer;
 import org.springframework.boot.web.server.WebServerException;
 
-/**
- * 没有任何操作的WebServer实现
- *
- * @author HuSen
- * @since 2021/3/2 7:59 下午
- */
 public class NoOpWebServer implements WebServer {
 
     private final int port;

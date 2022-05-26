@@ -3,12 +3,6 @@ package com.gapache.uid.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * DockerUtils
- * 
- * @author HuSen
- * create on 2020/1/9 15:15
- */
 @Slf4j
 public abstract class DockerUtils {
 

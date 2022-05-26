@@ -6,14 +6,6 @@ import com.pzhu.iacaa2_0.entityVo.TargetVo;
 
 import java.util.List;
 
-/**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author ZhaoZezhong
- * @since 2021-01-15
- */
 public interface TargetMapper extends BaseMapper<Target> {
     List<Target> getByReqId(Long id);
 

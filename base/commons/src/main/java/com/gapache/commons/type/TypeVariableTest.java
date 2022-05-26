@@ -6,10 +6,6 @@ import java.lang.reflect.Type;
 import java.lang.reflect.TypeVariable;
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/9/27 4:12 下午
- */
 public class TypeVariableTest<T> {
     private static final String LINE = "-------" + System.lineSeparator();
     private T a;

@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author HuSen
- * create on 2020/1/11 11:34
- */
 @Data
 public class JsonResult<T> implements Serializable {
     private static final long serialVersionUID = -1916466521535767957L;

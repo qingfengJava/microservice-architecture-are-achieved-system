@@ -7,10 +7,6 @@ import io.vertx.core.Promise;
 import io.vertx.core.http.HttpServer;
 import io.vertx.ext.web.Router;
 
-/**
- * @author HuSen
- * @since 2021/3/1 3:16 下午
- */
 public class HttpServerVerticle extends AbstractVerticle {
 
     private final VertxSettings.HttpServer settings;

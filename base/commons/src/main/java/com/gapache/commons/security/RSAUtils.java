@@ -16,10 +16,6 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author HuSen
- * create on 2020/1/8 10:10
- */
 public class RSAUtils {
 
     /**

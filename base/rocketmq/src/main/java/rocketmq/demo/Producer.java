@@ -9,10 +9,6 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 
 import java.io.UnsupportedEncodingException;
 
-/**
- * @author HuSen
- * @since 2020/7/16 11:30 上午
- */
 public class Producer {
 
     public static void main(String[] args) throws MQClientException, UnsupportedEncodingException, RemotingException, InterruptedException, MQBrokerException {

@@ -6,10 +6,6 @@ import lombok.Setter;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.ApplicationContext;
 
-/**
- * @author HuSen
- * @since 2021/3/2 2:55 下午
- */
 @Getter
 @Setter
 public class ZeusClientProxyFactory<T> implements FactoryBean<T> {

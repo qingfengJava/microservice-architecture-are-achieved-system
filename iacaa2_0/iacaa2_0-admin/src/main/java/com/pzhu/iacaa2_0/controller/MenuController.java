@@ -5,12 +5,6 @@ import com.gapache.security.annotation.NeedAuth;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author 清风学Java
- * @version V1.0
- * @Title: MenuController
- * @date 2021/4/914:12
- */
 @RestController
 @RequestMapping("/Menue")
 @NeedAuth("Menue")

@@ -5,10 +5,6 @@ import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-/**
- * @author HuSen
- * @since 2020/9/27 3:40 下午
- */
 public class GenericArrayTypeTest<T> {
     private static final String LINE = "-----------------------------------------------------------" + System.lineSeparator();
     private T[] t;

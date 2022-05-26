@@ -2,10 +2,6 @@ package com.gapache.redis;
 
 import com.gapache.commons.utils.IStringUtils;
 
-/**
- * @author HuSen
- * create on 2020/4/8 22:40
- */
 public abstract class BaseDataStructure<ID> {
 
     /**

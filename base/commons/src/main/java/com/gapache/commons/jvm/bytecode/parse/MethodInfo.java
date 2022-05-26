@@ -6,10 +6,6 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * @author HuSen
- * create on 2020/3/28 00:03
- */
 @Data
 public class MethodInfo {
     private List<AccessFlag> accessFlags;

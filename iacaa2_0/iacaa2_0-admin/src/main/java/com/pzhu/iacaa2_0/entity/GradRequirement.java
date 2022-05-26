@@ -8,14 +8,6 @@ import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
-/**
- * <p>
- *
- * </p>
- *
- * @author 清风学Java
- * @since 2021-01-15
- */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("t_grad_requirement")

@@ -15,19 +15,6 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Scanner;
 
-/**
- * -mp代码生成工具类，使用freemarker引擎
- * -使用前可以进行的修改
- *      gc.setAuthor  设置作者，会出现在类前
- *      gc.setOutputDir 设置输出路径，默认为 D:\
- *      pc.setParent 设置输出的包名(也即文件夹名)
- *      DataSourceConfig 设置数据源
- * -实体类使用lombok,swagger2，驼峰命名，去除is_前缀
- * -controller 使用rest风格
- * -dao.xml生成resultMap和baseColumnList
- * @author gcl
- * @create 2019-09-17 14:51
- */
 public class CodeGenerator {
 
     /**
