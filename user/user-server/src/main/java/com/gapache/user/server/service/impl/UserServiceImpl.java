@@ -137,14 +137,14 @@ public class UserServiceImpl implements UserService {
         Pageable pageable = PageHelper.of(iPageRequest);
         UserVO params = iPageRequest.getCustomParams();
         Page<UserEntity> page;
-        if (accessCard.getCustomerInfo().containsKey(AuthConstants.POSITION_ID)
+        /*if (accessCard.getCustomerInfo().containsKey(AuthConstants.POSITION_ID)
                 || accessCard.getCustomerInfo().containsKey(AuthConstants.SUPERIOR_ID)) {
             if (params != null && StringUtils.isNotBlank(params.getUsername())) {
                 page = userRepository.findAllByOwnerIdAndUsernameLike(FindUtils.allMatch(params.getUsername()), accessCard.getUserId(), pageable);
             } else {
                 page = userRepository.findAllByOwnerId(accessCard.getUserId(), pageable);
             }
-        } else {
+        } else {*/
             page = userRepository.findAll(SpecificationFactory.produce((predicates, root, criteriaBuilder) -> {
                 if (params != null) {
                     if (StringUtils.isNotBlank(params.getUsername())) {
@@ -153,7 +153,7 @@ public class UserServiceImpl implements UserService {
                     predicates.add(criteriaBuilder.notEqual(root.get("isDelete").as(Boolean.class), true));
                 }
             }), pageable);
-        }
+        /*}*/
 
         Map<Long, UserCustomizeInfoEntity> map = new HashMap<>(iPageRequest.getNumber());
         if (params != null && StringUtils.isBlank(params.getClient())) {
