@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qingfeng.analysis.dao.CourseTaskDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.qingfeng.analysis.beans.CourseTaskEntity" id="courseTaskMap">
+        <result property="id" column="id"/>
+        <result property="describes" column="describes"/>
+        <result property="courseId" column="course_id"/>
+        <result property="targetId" column="target_id"/>
+        <result property="mix" column="mix"/>
+        <result property="year" column="year"/>
+        <result property="sysGrade" column="sys_grade"/>
+        <result property="stuGrade" column="stu_grade"/>
+        <result property="createdDate" column="created_date"/>
+        <result property="updateDate" column="update_date"/>
+    </resultMap>
+
+
+</mapper>

@@ -4,12 +4,12 @@ spring:
   application:
     name: gateway
   redis:
-    host: 127.0.0.1
-    port: 6379
+    host: 47.108.28.239
+    port: 6390
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 47.108.28.239:8848
         watch-delay: 5000
     gateway:
       discovery:

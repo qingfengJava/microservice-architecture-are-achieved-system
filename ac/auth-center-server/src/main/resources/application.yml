@@ -6,7 +6,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 47.108.28.239:8848
       datasource:
         degrade:
           nacos:
@@ -16,8 +16,8 @@ spring:
             data-type: json
             rule-type: degrade
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/iacaa20?rewriteBatchedStatements=true&useSSL=true&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.108.28.239:3308/iacaa20?rewriteBatchedStatements=true&useSSL=true&serverTimezone=GMT%2B8
     username: root
     password: root
   jpa:
@@ -29,8 +29,8 @@ spring:
     open-in-view: false
     database-platform: org.hibernate.dialect.MySQL57Dialect
   redis:
-    host: 127.0.0.1
-    port: 6379
+    host: 47.108.28.239
+    port: 6390
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
@@ -62,7 +62,7 @@ com:
       update-resources: true
       client-id: husen19950528201314lq19980824
     redisson:
-      address: redis://127.0.0.1:6379
+      address: redis://47.108.28.239:6390
       database: 1
     vertx:
       settings:
