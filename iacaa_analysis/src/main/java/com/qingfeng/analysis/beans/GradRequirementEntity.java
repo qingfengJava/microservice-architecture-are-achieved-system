@@ -2,16 +2,15 @@ package com.qingfeng.analysis.beans;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
+ * 毕业要求实体类
  * 
- * 
- * @author qingfeng
- * @email ${email}
+ * @author 清风学Java
  * @date 2022-07-12 23:39:47
  */
 @Data

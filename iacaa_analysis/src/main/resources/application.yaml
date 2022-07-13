@@ -8,17 +8,19 @@ spring:
       discovery:
         server-addr: 47.108.28.239:8848
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.108.28.239:3308/iacaa20?rewriteBatchedStatements=true&useSSL=true&serverTimezone=GMT%2B8
-    username: root
-    password: root
-
-mybatis:
-  mapper-locations: classpath:mappers/*.xml
-  type-aliases-package: com.qingfeng.analysis.beans
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://47.108.28.239:3308/iacaa20?rewriteBatchedStatements=true&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: root
+      max-active: 20
+      initial-size: 3
+      min-idle: 5
 
 #查看mybatis日志
 mybatis-plus:
+  mapper-locations: classpath:mappers/*Dao.xml
+  type-aliases-package: com.qingfeng.analysis.beans
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 

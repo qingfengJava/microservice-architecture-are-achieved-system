@@ -8,10 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
+ * 指标点实体类
  * 
- * 
- * @author qingfeng
- * @email ${email}
+ * @author 清风学Java
  * @date 2022-07-12 23:39:45
  */
 @Data

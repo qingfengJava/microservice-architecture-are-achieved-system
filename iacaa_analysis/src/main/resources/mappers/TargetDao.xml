@@ -3,7 +3,7 @@
 
 <mapper namespace="com.qingfeng.analysis.dao.TargetDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+    <!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.qingfeng.analysis.beans.TargetEntity" id="targetMap">
         <result property="id" column="id"/>
         <result property="discribe" column="discribe"/>
@@ -14,6 +14,38 @@
         <result property="createdDate" column="created_date"/>
         <result property="updateDate" column="update_date"/>
     </resultMap>
+
+    <resultMap id="courseTargetMap" type="com.qingfeng.analysis.beans.vo.CourseTargetVo">
+        <id column="id" property="id"/>
+        <result column="course_id" property="courseId"/>
+        <result column="discribe" property="discribe"/>
+        <result column="req_id" property="reqId"/>
+        <result column="mix" property="mix" />
+        <result column="year" property="year"/>
+        <result column="sys_grade" property="sysGrade"/>
+        <result column="stu_grade" property="stuGrade"/>
+
+        <!-- 一对多关联查询课程目标 -->
+        <collection property="courseTaskVoList" select="com.qingfeng.analysis.dao.CourseTaskDao.findByCourseId"
+                    column="{courseId=course_id,targetId=id,year=year}" />
+    </resultMap>
+
+
+    <select id="findByCourseTargetId" resultMap="courseTargetMap">
+        select tt.id,
+               tct.course_id,
+               tt.discribe,
+               tt.req_id,
+               tct.mix,
+               tt.`year`,
+               tt.sys_grade,
+               tt.stu_grade
+        from t_course tc
+                 LEFT JOIN t_course_target tct on tc.id = tct.course_id
+                 LEFT JOIN t_target tt ON tct.target_id = tt.id
+        where tt.`year` = #{year}
+          and tc.id = #{courseId};
+    </select>
 
 
 </mapper>
