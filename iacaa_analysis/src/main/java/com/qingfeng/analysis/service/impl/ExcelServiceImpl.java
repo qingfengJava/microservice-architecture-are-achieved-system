@@ -25,6 +25,6 @@ public class ExcelServiceImpl implements ExcelService {
     public void getExcel(HttpServletResponse response, String id, String year) throws IOException {
         List<ExcelRuleVo> rules = dao.getRule(id, year);
         String courseName = rules.get(0).getCourseName();
-        EasyPoiUtils.exportExcelByRule(rules, courseName + "评分细则", "评分细则", ExcelRuleVo.class, courseName + ".xls", response);
+        EasyPoiUtils.exportExcelByRule(rules, courseName + "评分细则", "评分细则", ExcelRuleVo.class, courseName + ".xlsx", response);
     }
 }

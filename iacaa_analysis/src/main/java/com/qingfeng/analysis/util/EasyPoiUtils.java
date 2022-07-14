@@ -228,6 +228,7 @@ public class EasyPoiUtils {
 	public static void exportExcelByRule(	List<?> list, String title, String sheetName, Class<?> pojoClass,
 											 String fileName, HttpServletResponse response) {
 		ExportParams exportParams = new ExportParams(title, sheetName);
+		exportParams.setType(ExcelType.XSSF);
 		exportParams.setCreateHeadRows(true);
 		exportParams.setStyle(ExcelStyleUtils.class);
 		Workbook workbook = ExcelExportUtil.exportExcel(exportParams, pojoClass, list);
