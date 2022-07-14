@@ -26,6 +26,10 @@
         <result property="year" column="year"/>
         <result property="sysGrade" column="sys_grade"/>
         <result property="stuGrade" column="stu_grade"/>
+
+        <!-- 一对多关联查询课程目标 -->
+        <collection property="checkLinkVoList" select="com.qingfeng.analysis.dao.CheckLinkDao.findCheckLinkList"
+                    column="{courseTaskId=id,courseId=course_id,year=year}" />
     </resultMap>
 
     <select id="findByCourseId" resultMap="courseTaskVoMap">

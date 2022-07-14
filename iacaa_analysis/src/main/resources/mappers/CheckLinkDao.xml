@@ -3,7 +3,7 @@
 
 <mapper namespace="com.qingfeng.analysis.dao.CheckLinkDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+    <!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.qingfeng.analysis.beans.CheckLinkEntity" id="checkLinkMap">
         <result property="id" column="id"/>
         <result property="courseId" column="course_id"/>
@@ -14,6 +14,32 @@
         <result property="createdDate" column="created_date"/>
         <result property="updateDate" column="update_date"/>
     </resultMap>
+
+    <resultMap type="com.qingfeng.analysis.beans.vo.CheckLinkVo" id="checkLinkVoMap">
+        <result property="id" column="id"/>
+        <result property="courseId" column="course_id"/>
+        <result property="name" column="name"/>
+        <result property="targetScore" column="target_score"/>
+        <result property="averageScore" column="average_score"/>
+        <result property="year" column="year"/>
+        <result property="mix" column="mix"/>
+    </resultMap>
+
+    <select id="findCheckLinkList" resultMap="checkLinkVoMap">
+        SELECT tcl.id,
+               tcl.course_id,
+               tcl.`name`,
+               tcl.target_score,
+               tcl.average_score,
+               tcl.`year`,
+               tctcl.mix
+        FROM t_course_task tct
+                 LEFT JOIN t_course_task_check_link tctcl ON tct.id = tctcl.course_task_id
+                 LEFT JOIN t_check_link tcl ON tctcl.check_link_id = tcl.id
+        WHERE tctcl.course_task_id = #{courseTaskId}
+          and tcl.course_id = #{courseId}
+          and tcl.`year` = #{year}
+    </select>
 
 
 </mapper>

@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.List;
+
 /**
  * @author 清风学Java
  * @version 1.0.0
@@ -49,4 +51,9 @@ public class CourseTaskVo {
      * 学生评价成绩
      */
     private Double stuGrade;
+
+    /**
+     * 关联考核环节
+     */
+    private List<CheckLinkVo> checkLinkVoList;
 }
