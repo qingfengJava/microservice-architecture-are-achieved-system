@@ -23,8 +23,8 @@ public class ExcelController {
     private ExcelService excelService;
 
     @ApiOperation("获取excel表格")
-    @GetMapping("/{id}")
-    public void getExcel(HttpServletResponse response, @PathVariable String id) throws IOException {
-        excelService.getExcel(response,id);
+    @GetMapping("/{id}/{year}")
+    public void getExcel(HttpServletResponse response, @PathVariable String id, @PathVariable String year) throws IOException {
+        excelService.getExcel(response,id,year);
     }
 }

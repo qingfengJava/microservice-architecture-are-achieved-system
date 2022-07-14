@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qingfeng.analysis.dao.ExcelDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.qingfeng.analysis.beans.vo.ExcelRuleVo" id="courseTaskMap">
+        <result property="courseName" column="courseName"/>
+        <result property="name" column="name"/>
+        <result property="desc" column="describes"/>
+        <result property="graduation" column="discribe"/>
+        <collection property="tasks" javaType="ArrayList" ofType="com.qingfeng.analysis.beans.TaskCheckEntity" select="getTask" column="tctId">
+            <result property="courseTask" column="courseTask"/>
+            <result property="mix" column="mix"/>
+        </collection>
+    </resultMap>
+    
+    <select id="getRule" resultMap="courseTaskMap">
+        SELECT
+            tct.id AS tctId,
+            t.name AS courseName,
+            LEFT ( describes, 3 ) AS name,
+            describes,
+            discribe
+        FROM
+            t_course AS t,
+            t_course_task AS tct,
+            t_target AS tt
+        WHERE
+            tct.course_id = #{id}
+          AND tct.target_id = tt.id
+          AND t.id = #{id}
+          AND tct.YEAR = #{year}
+    </select>
+
+    <select id="getTask" resultType="com.qingfeng.analysis.beans.TaskCheckEntity">
+        SELECT
+            name as courseTask,
+            mix
+        FROM
+            t_course_task_check_link AS l,
+            t_check_link AS t
+        WHERE
+            l.course_task_id = #{tctId}
+          AND
+            l.check_link_id = t.id
+    </select>
+</mapper>
