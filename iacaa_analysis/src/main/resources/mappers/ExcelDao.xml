@@ -45,4 +45,75 @@
           AND
             l.check_link_id = t.id
     </select>
+
+    <resultMap type="com.qingfeng.analysis.beans.vo.ExcelStuVo" id="excelStuVoMap">
+        <result property="uid" column="stuno"/>
+        <collection property="tak" javaType="ArrayList" ofType="com.qingfeng.analysis.beans.ExcelStuEntity" select="task" column="{id=id,year=year,stuno=stuno}"/>
+    </resultMap>
+
+    <resultMap id="taskVo" type="com.qingfeng.analysis.beans.ExcelStuEntity">
+        <result property="name" column="name"/>
+        <collection property="tasks" javaType="ArrayList" ofType="com.qingfeng.analysis.beans.ExcelTaskCheckEntity" select="getTasks" column="{tctId=tctId,stuno=stuno,id=id,year=year}">
+            <result property="taskName" column="taskName"/>
+            <result property="score" column="score"/>
+            <result property="reach" column="reach"/>
+            <result property="mix" column="mix"/>
+        </collection>
+    </resultMap>
+
+    <select id="getStu" resultMap="excelStuVoMap">
+        select DISTINCT stuno,tct.year,tct.course_id as id
+        from
+            t_course_task as tct,
+            t_check_link as tcl,
+            t_course_task_check_link as l,
+            t_stu_score as tss
+        where
+            tct.course_id = #{id}
+          and tct.year = #{year}
+          and l.check_link_id = tcl.id
+          and l.course_task_id = tct.id
+          and tss.check_link_id = tcl.id
+    </select>
+
+    <select id="task" resultMap="taskVo">
+        SELECT
+            tct.id AS tctId,
+            describes as name,
+            #{stuno} as stuno,
+            t.id as id,
+            tct.year
+        FROM
+            t_course AS t,
+            t_course_task AS tct,
+            t_target AS tt
+        WHERE
+            tct.course_id = #{id}
+          AND tct.target_id = tt.id
+          AND t.id = #{id}
+          AND tct.YEAR = #{year}
+    </select>
+
+    <select id="getTasks" resultType="com.qingfeng.analysis.beans.ExcelTaskCheckEntity">
+        SELECT DISTINCT
+            tcl.name as taskName,
+            score,
+            mix_score as reach,
+            l.mix
+        FROM
+            t_course_task as tct,
+            t_check_link as tcl,
+            t_course_task_check_link as l,
+            t_stu_score as tss
+        WHERE
+            tct.course_id = #{id}
+          and tct.year = #{year}
+          and l.check_link_id = tcl.id
+          and l.course_task_id = tct.id
+          and tss.check_link_id = tcl.id
+          and tct.id=#{tctId}
+          and tss.stuno = #{stuno}
+    </select>
+
+
 </mapper>
