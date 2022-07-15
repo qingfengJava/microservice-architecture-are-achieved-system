@@ -142,7 +142,7 @@ public class ExcelStyleUtils implements IExcelExportStyler {
      *
      * @return
      */
-    private CellStyle getBaseCellStyle(Workbook workbook) {
+    public static CellStyle getBaseCellStyle(Workbook workbook) {
         CellStyle style = workbook.createCellStyle();
         //下边框
         style.setBorderBottom(BorderStyle.THIN);

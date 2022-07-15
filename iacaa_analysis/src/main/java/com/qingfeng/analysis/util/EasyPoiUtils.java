@@ -106,7 +106,7 @@ public class EasyPoiUtils {
 	 * @param workbook Excel对象
 	 * @return
 	 */
-	private static void downLoadExcel(	String fileName, HttpServletResponse response,
+	public static void downLoadExcel(	String fileName, HttpServletResponse response,
 										Workbook workbook) {
 		try {
 			response.setCharacterEncoding("UTF-8");
