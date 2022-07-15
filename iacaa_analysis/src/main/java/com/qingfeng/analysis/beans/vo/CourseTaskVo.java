@@ -56,4 +56,9 @@ public class CourseTaskVo {
      * 关联考核环节
      */
     private List<CheckLinkVo> checkLinkVoList;
+
+    /**
+     * 关联学生间接评价信息
+     */
+    private EvaluationVo evaluationVo;
 }
