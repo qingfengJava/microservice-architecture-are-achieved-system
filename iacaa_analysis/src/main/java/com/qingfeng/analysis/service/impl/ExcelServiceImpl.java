@@ -39,7 +39,7 @@ public class ExcelServiceImpl implements ExcelService {
 //        EasyPoiUtils.exportExcelByRule(rules, courseName + "评分细则", "评分细则", ExcelRuleVo.class, courseName + ".xlsx", response);
         List<ExcelStuVo> stus = getStu(id, year);
         //创建评分细则表
-        ExportParams exportParams = new ExportParams(courseName + "评分细则", "评分细则");
+        ExportParams exportParams = new ExportParams(courseName + "考核环节", "考核环节");
         exportParams.setType(ExcelType.XSSF);
         exportParams.setCreateHeadRows(true);
         exportParams.setStyle(ExcelStyleUtils.class);
