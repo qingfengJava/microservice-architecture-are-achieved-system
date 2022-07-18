@@ -16,6 +16,7 @@ import lombok.ToString;
 @ToString
 public class TaskVo {
 
+    private String color;
     private String name;
     private double[] data;
 }

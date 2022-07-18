@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
-
 /**
  * @author 清风学Java
  * @version 1.0.0
@@ -16,23 +14,15 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class AnalysisTaskVo {
+public class AnalysisEvaluationVo {
 
     /**
-     * 目标名称
+     * 名称
      */
-    private String[] name;
+    private String name;
+
     /**
      * 分数数组
      */
-    private List<TaskVo> task;
-
-    /**
-     * 定量平均值
-     */
-    private Double rationScore;
-    /**
-     * 主观平均值
-     */
-    private Double subjectiveScore;
+    private Integer[] data;
 }

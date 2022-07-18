@@ -117,32 +117,44 @@ public class AnalysisServiceImpl implements AnalysisService {
             courseTaskEntityQueryWrapper.eq("year",year);
             List<CourseTaskEntity> taskEntityList = courseTaskDao.selectList(courseTaskEntityQueryWrapper);
 
-            List<AnalysisScoreVo> list = new ArrayList<>();
+            List<AnalysisEvaluationVo> list = new ArrayList<>();
             //遍历课程目标，查询每个课程目标下的成绩
+            QueryWrapper<StuEvaluationEntity> wrapper = null;
             for (CourseTaskEntity courseTaskEntity : taskEntityList) {
-                //根据课程目标id查询成绩集合
-                QueryWrapper<StuEvaluationEntity> stuEvaluationEntityQueryWrapper = new QueryWrapper<>();
-                stuEvaluationEntityQueryWrapper.eq("course_task", courseTaskEntity.getId());
-                List<StuEvaluationEntity> evaluationList = stuEvaluationDao.selectList(stuEvaluationEntityQueryWrapper);
+
+                //根据Id查询不同分值段的人数
+                //查询分值为5的人数
+                wrapper = new QueryWrapper<>();
+                wrapper.eq("course_task",courseTaskEntity.getId());
+                wrapper.eq("score",5.000);
+                Integer achieve = stuEvaluationDao.selectCount(wrapper);
+                //查询分值为4的人数
+                wrapper = new QueryWrapper<>();
+                wrapper.eq("course_task",courseTaskEntity.getId());
+                wrapper.eq("score",4.000);
+                Integer mostReach = stuEvaluationDao.selectCount(wrapper);
+                //查询分值为3的人数
+                wrapper = new QueryWrapper<>();
+                wrapper.eq("course_task",courseTaskEntity.getId());
+                wrapper.eq("score",3.000);
+                Integer basicAchieve = stuEvaluationDao.selectCount(wrapper);
+                //查询分值为2的人数
+                wrapper = new QueryWrapper<>();
+                wrapper.eq("course_task",courseTaskEntity.getId());
+                wrapper.eq("score",2.000);
+                Integer mostNotAchieve = stuEvaluationDao.selectCount(wrapper);
+                //查询分值为1的人数
+                wrapper = new QueryWrapper<>();
+                wrapper.eq("course_task",courseTaskEntity.getId());
+                wrapper.eq("score",1.000);
+                Integer basicNotAchieve = stuEvaluationDao.selectCount(wrapper);
 
                 //遍历集合， 封装数据
-                int[][] scoreArr = new int[evaluationList.size()][2];
-                int count = 1;
-                double averageScore = 0.0;
-                for (StuEvaluationEntity stuEvaluationEntity : evaluationList) {
-                    scoreArr[count-1][0] = count;
-                    scoreArr[count-1][1] = (int) (stuEvaluationEntity.getScore()*20);
-                    averageScore += stuEvaluationEntity.getScore()*20/evaluationList.size();
-                    count++;
-                }
+                Integer[] scoreArr = new Integer[]{achieve,mostReach,basicAchieve,mostNotAchieve,basicNotAchieve};
 
                 //将数据封装到对象中
-                AnalysisScoreVo analysisScoreVo = new AnalysisScoreVo();
-                analysisScoreVo.setName(courseTaskEntity.getDescribes().substring(0,3));
-                analysisScoreVo.setAverageScore(Double.parseDouble(new DecimalFormat("#.00").format(averageScore)));
-                analysisScoreVo.setScoreArr(scoreArr);
 
-                list.add(analysisScoreVo);
+                list.add(new AnalysisEvaluationVo(courseTaskEntity.getDescribes().substring(0,3),scoreArr));
             }
 
             return new ResultVO(ResStatus.OK,"success",list);
@@ -171,19 +183,25 @@ public class AnalysisServiceImpl implements AnalysisService {
         double[] rationScore = new double[taskEntityList.size()];
         double[] subjectiveScore = new double[taskEntityList.size()];
         int count = 0;
+        double ration = 0.0;
+        double subjective = 0.0;
         for (CourseTaskEntity courseTaskEntity : taskEntityList) {
             name[count] = courseTaskEntity.getDescribes();
             rationScore[count] = courseTaskEntity.getSysGrade()*100;
             subjectiveScore[count] = courseTaskEntity.getStuGrade()*100;
+            ration += courseTaskEntity.getSysGrade()*100 / taskEntityList.size();
+            subjective += courseTaskEntity.getStuGrade()*100 / taskEntityList.size();
             count++;
         }
 
         AnalysisTaskVo analysisTaskVo = new AnalysisTaskVo();
         analysisTaskVo.setName(name);
         List<TaskVo> taskList = new ArrayList<>();
-        taskList.add(new TaskVo("定量达成值",rationScore));
-        taskList.add(new TaskVo("主观达成值",subjectiveScore));
+        taskList.add(new TaskVo("red","定量达成值",rationScore));
+        taskList.add(new TaskVo("blue","主观达成值",subjectiveScore));
         analysisTaskVo.setTask(taskList);
+        analysisTaskVo.setRationScore(Double.parseDouble(new DecimalFormat("#.00").format(ration)));
+        analysisTaskVo.setSubjectiveScore(Double.parseDouble(new DecimalFormat("#.00").format(subjective)));
 
         return new ResultVO(ResStatus.OK, "success", analysisTaskVo);
     }
