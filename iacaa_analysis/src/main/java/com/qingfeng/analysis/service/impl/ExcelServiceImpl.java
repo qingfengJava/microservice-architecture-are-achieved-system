@@ -7,6 +7,8 @@ import com.qingfeng.analysis.beans.ExcelStuEntity;
 import com.qingfeng.analysis.beans.ExcelTaskCheckEntity;
 import com.qingfeng.analysis.beans.vo.ExcelRuleVo;
 import com.qingfeng.analysis.beans.vo.ExcelStuVo;
+import com.qingfeng.analysis.beans.vo.ResultVO;
+import com.qingfeng.analysis.dao.CheckLinkDao;
 import com.qingfeng.analysis.dao.ExcelDao;
 import com.qingfeng.analysis.service.ExcelService;
 import com.qingfeng.analysis.util.EasyPoiUtils;
@@ -18,7 +20,9 @@ import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -32,12 +36,15 @@ public class ExcelServiceImpl implements ExcelService {
     @Autowired
     private ExcelDao dao;
 
+    @Autowired
+    private CheckLinkDao checkLinkDao;
+
     @Override
     public void getExcel(HttpServletResponse response, String id, String year) throws IOException {
         List<ExcelRuleVo> rules = dao.getRule(id, year);
         String courseName = rules.get(0).getCourseName();
 //        EasyPoiUtils.exportExcelByRule(rules, courseName + "评分细则", "评分细则", ExcelRuleVo.class, courseName + ".xlsx", response);
-        List<ExcelStuVo> stus = getStu(id, year);
+        List<ExcelStuVo> stus = getSTU(id, year);
         //创建评分细则表
         ExportParams exportParams = new ExportParams(courseName + "考核环节", "考核环节");
         exportParams.setType(ExcelType.XSSF);
@@ -242,7 +249,7 @@ public class ExcelServiceImpl implements ExcelService {
             }
             CellStyle styleColor = ExcelStyleUtils.getBaseCellStyle(workbook);
             DataFormat format = workbook.createDataFormat();
-            styleColor.setDataFormat(format.getFormat("00.000"));
+            styleColor.setDataFormat(format.getFormat("0.000"));
             styleColor.setFillForegroundColor(IndexedColors.PALE_BLUE.getIndex());
             styleColor.setFillPattern(FillPatternType.SOLID_FOREGROUND);
             cell6.setCellStyle(styleColor);
@@ -262,8 +269,7 @@ public class ExcelServiceImpl implements ExcelService {
         }
     }
 
-    @Override
-    public List<ExcelStuVo> getStu(String id, String year) {
+    private List<ExcelStuVo> getSTU(String id, String year) {
         List<ExcelStuVo> stu = dao.getStu(id, year);
         for (ExcelStuVo s : stu) {
             for (ExcelStuEntity ese : s.getTak()) {
@@ -280,8 +286,8 @@ public class ExcelServiceImpl implements ExcelService {
                     } else {
                         ese.setScoreTar(ese.getScoreTar() + v1 / 2.0);
                     }
-
                 }
+
             }
         }
         for (ExcelStuVo s : stu) {
@@ -295,6 +301,81 @@ public class ExcelServiceImpl implements ExcelService {
             }
         }
         return stu;
+    }
+
+    @Override
+    public ResultVO getStu(String id, String year) {
+        List<ExcelStuVo> stu = dao.getStu(id, year);
+        for (ExcelStuVo s : stu) {
+            for (ExcelStuEntity ese : s.getTak()) {
+                for (ExcelTaskCheckEntity task : ese.getTasks()) {
+                    double v = task.getReach() * task.getMix();
+                    if (Objects.isNull(ese.getReachTar())) {
+                        ese.setReachTar(v);
+                    } else {
+                        ese.setReachTar(ese.getReachTar() + v);
+                    }
+                    double v1 = task.getScore() * task.getMix();
+                    if (Objects.isNull(ese.getScoreTar())) {
+                        ese.setScoreTar(v1 / 2.0);
+                    } else {
+                        ese.setScoreTar(ese.getScoreTar() + v1 / 2.0);
+                    }
+                }
+
+            }
+        }
+        for (ExcelStuVo s : stu) {
+            for (ExcelStuEntity ese : s.getTak()) {
+                Double scoreTar = ese.getScoreTar();
+                if (s.getScoreAll() == null) {
+                    s.setScoreAll(scoreTar);
+                } else {
+                    s.setScoreAll(s.getScoreAll() + scoreTar);
+                }
+            }
+        }
+        int takNum = 0, tn = stu.get(0).getTak().size();
+        for (ExcelStuEntity e : stu.get(0).getTak()) {
+            takNum += e.getTasks().size();
+        }
+        int count = 0, i = stu.get(0).getTak().size() * 2 + takNum * 2 + 1;
+        double[] avgScore = new double[i];
+        for (int j = 0; j < i; j++) {
+            avgScore[j] = 0;
+        }
+        for (int x = 0; x < stu.size(); x++) {
+            ArrayList<ExcelStuEntity> tak = stu.get(x).getTak();
+            int c = 0;
+            for (int y = 0; y < tak.size(); y++) {
+                Double scoreTar = tak.get(y).getScoreTar();
+                //目标分
+                avgScore[takNum + y] += scoreTar;
+                //目标达成值
+                avgScore[avgScore.length - tn - y + 1] += tak.get(y).getReachTar();
+                ArrayList<ExcelTaskCheckEntity> tasks = tak.get(y).getTasks();
+                for (int z = 0; z < tasks.size(); z++) {
+                    Double score = tasks.get(z).getScore();
+                    //各考核环节达成值
+                    avgScore[c + takNum + tn + 1] += tasks.get(z).getReach();
+                    //各考核环节成绩
+                    avgScore[c++] += score;
+                }
+            }
+            //总分
+            avgScore[takNum + tn] += stu.get(x).getScoreAll();
+        }
+        DecimalFormat df = new DecimalFormat("#.000");
+        for (int k = 0; k < avgScore.length; k++) {
+            avgScore[k] = Double.parseDouble(df.format(avgScore[k] / stu.size()));
+        }
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("stu", stu);
+        map.put("avg", avgScore);
+        ResultVO r = new ResultVO();
+        r.setData(map);
+        r.setCode(200);
+        return r;
     }
 
 }

@@ -1,10 +1,9 @@
 package com.qingfeng.analysis.service;
 
-import com.qingfeng.analysis.beans.vo.ExcelStuVo;
+import com.qingfeng.analysis.beans.vo.ResultVO;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 public interface ExcelService {
 
@@ -21,5 +20,5 @@ public interface ExcelService {
      * @param year
      * @return
      */
-    List<ExcelStuVo> getStu(String id, String year);
+    ResultVO getStu(String id, String year);
 }
