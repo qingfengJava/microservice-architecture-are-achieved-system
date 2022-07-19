@@ -47,21 +47,28 @@ public class AnalysisServiceImpl implements AnalysisService {
     public ResultVO getStuRation(Integer courseId, Integer year) {
         List<CourseTargetVo> courseTarget = targetDao.findByCourseTargetId(courseId, year);
         //先拿到每个目标的集合
-        HashMap<String, List<CheckLinkVo>> map = new HashMap<>(16);
+        HashMap<Integer, List<CheckLinkVo>> map = new HashMap<>(16);
         for (CourseTargetVo courseTargetVo : courseTarget) {
             for (CourseTaskVo courseTaskVo : courseTargetVo.getCourseTaskVoList()) {
-                map.put(courseTaskVo.getDescribes().substring(0,3),courseTaskVo.getCheckLinkVoList());
+                map.put(Integer.parseInt(courseTaskVo.getDescribes().substring(2,3)),courseTaskVo.getCheckLinkVoList());
             }
         }
         //每个map表示一个目标，每个目标下有不同的考核环节，需要根据考核环节查询课程成绩
         List<AnalysisScoreVo> params = new ArrayList<>();
         HashMap<String, Object> averageValue = new HashMap<>(16);
         int totalNum = 0;
-        for (Map.Entry<String, List<CheckLinkVo>> entry : map.entrySet()) {
+        for (Map.Entry<Integer, List<CheckLinkVo>> entry : map.entrySet()) {
             List<CheckLinkVo> checkLinkList = entry.getValue();
             //每一个list下面有考核环节，然后查询成绩
             //使用一个map来存储查询到的成绩，然后再计算
             Map<Integer, Double> scoreMap = new HashMap<>(16);
+            Map<Integer, Integer> evaluationMap = new HashMap<>(16);
+            evaluationMap.put(1,0);
+            evaluationMap.put(2,0);
+            evaluationMap.put(3,0);
+            evaluationMap.put(4,0);
+            evaluationMap.put(5,0);
+
             for (CheckLinkVo checkLinkVo : checkLinkList) {
                 int count = 1;
                 QueryWrapper<StuScoreEntity> queryWrapper = new QueryWrapper();
@@ -77,6 +84,20 @@ public class AnalysisServiceImpl implements AnalysisService {
                     }else{
                         score = scoreMap.get(count) + stuScoreEntity.getScore()/checkLinkList.size();
                     }
+
+                    //同时处理成绩结果数据
+                    if (score >= 90){
+                        evaluationMap.put(1,evaluationMap.get(1)+1);
+                    }else if (score >= 80){
+                        evaluationMap.put(2,evaluationMap.get(2)+1);
+                    }else if (score >= 70){
+                        evaluationMap.put(3,evaluationMap.get(3)+1);
+                    }else if (score >= 60){
+                        evaluationMap.put(4,evaluationMap.get(4)+1);
+                    }else{
+                        evaluationMap.put(5,evaluationMap.get(4)+1);
+                    }
+
                     scoreMap.put(count,score);
                     count++;
                 }
@@ -93,9 +114,14 @@ public class AnalysisServiceImpl implements AnalysisService {
 
             //创建对象封装数据
             AnalysisScoreVo analysisScoreVo = new AnalysisScoreVo();
-            analysisScoreVo.setName(entry.getKey());
+            analysisScoreVo.setName("目标"+entry.getKey());
             analysisScoreVo.setScoreArr(scoreArr);
             analysisScoreVo.setAverageScore(Double.parseDouble(new DecimalFormat("#.00").format(totalScore)));
+            analysisScoreVo.setStr1(evaluationMap.get(1)*2 + "%");
+            analysisScoreVo.setStr2(evaluationMap.get(2)*2 + "%");
+            analysisScoreVo.setStr3(evaluationMap.get(3)*2 + "%");
+            analysisScoreVo.setStr4(evaluationMap.get(4)*2 + "%");
+            analysisScoreVo.setStr5(evaluationMap.get(5)*2 + "%");
             params.add(analysisScoreVo);
         }
 

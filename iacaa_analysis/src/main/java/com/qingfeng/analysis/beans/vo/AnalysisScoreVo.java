@@ -28,4 +28,11 @@ public class AnalysisScoreVo {
      * 分数数组
      */
     private int[][] scoreArr;
+
+    private String str1;
+    private String str2;
+    private String str3;
+    private String str4;
+    private String str5;
+
 }

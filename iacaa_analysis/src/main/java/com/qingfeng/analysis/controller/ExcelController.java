@@ -1,6 +1,7 @@
 package com.qingfeng.analysis.controller;
 
 import com.qingfeng.analysis.beans.vo.ResultVO;
+import com.qingfeng.analysis.constant.ResStatus;
 import com.qingfeng.analysis.dao.ExcelDao;
 import com.qingfeng.analysis.service.ExcelService;
 import io.swagger.annotations.Api;
@@ -36,16 +37,12 @@ public class ExcelController {
     @ApiOperation("获取评价细则表格数据")
     @GetMapping("/e/{id}/{year}")
     public ResultVO getExcelObj(@PathVariable String id, @PathVariable String year) throws IOException {
-        ResultVO resultVO = new ResultVO();
-        resultVO.setData(excelDao.getRule(id,year));
-        return resultVO;
+        return new ResultVO(ResStatus.OK,"success",excelDao.getRule(id,year));
     }
 
     @ApiOperation("获取成绩表格数据")
     @GetMapping("/stu/{id}/{year}")
     public ResultVO getExcelStuObj(@PathVariable String id, @PathVariable String year) throws IOException {
-        ResultVO resultVO = new ResultVO();
-        resultVO.setData(excelService.getStu(id,year));
-        return resultVO;
+        return new ResultVO(ResStatus.OK,"success",excelService.getStu(id,year));
     }
 }
